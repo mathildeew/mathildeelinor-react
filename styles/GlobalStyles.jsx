@@ -53,6 +53,7 @@ export const GlobalStyle = createGlobalStyle`
     p {
         font-family: Montserrat, sans-serif;
         font-size: 1.6rem;
+        line-height: 2.5rem;
     }
 
 `;
