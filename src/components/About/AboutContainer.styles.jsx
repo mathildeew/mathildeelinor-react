@@ -29,7 +29,29 @@ export const AboutContainer = styled.div`
     z-index: 1;
   }
 
-  .pinline {
-    display: flex;
+  .aboutSection {
+    margin-bottom: 40px;
+  }
+
+  .aboutText {
+    p:first-child {
+      margin-bottom: 20px;
+    }
+  }
+
+  .bulk {
+    margin-bottom: 10px;
+
+    div:first-child {
+      display: flex;
+    }
+
+    p:first-child {
+      margin-right: 7px;
+    }
+  }
+
+  .boldText {
+    font-weight: 600;
   }
 `;

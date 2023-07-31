@@ -38,6 +38,10 @@ export const GlobalStyle = createGlobalStyle`
         list-style: none;
     }
 
+    h2 {
+        font-size: 1.8rem;;
+    }
+
     a {
         text-decoration: none;
     }
@@ -52,7 +56,7 @@ export const GlobalStyle = createGlobalStyle`
 
     p {
         font-family: Montserrat, sans-serif;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         line-height: 2.5rem;
     }
 
