@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
+import { HeaderContainer } from "./Header.styles";
 
 export default function Header() {
   return (
-    <header>
+    <HeaderContainer>
       <Link to="/">Home</Link>
-    </header>
+    </HeaderContainer>
   );
 }
