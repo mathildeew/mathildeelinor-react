@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
 
     html {
         --color-primary: #3e3e3e;
-        --color-secondary: #fcfffc;
+        --color-secondary: #f2faff;
         height: 100%;
         font-size: 62.5%
     }
@@ -21,14 +21,14 @@ export const GlobalStyle = createGlobalStyle`
         min-height: 100vh;
         display: flex;
         flex-direction: column;
-
     }
 
     main {
         width: 100%;
-        margin-left: 10px;
-        margin-right: 10px;
+        max-width: 565px;
+        padding: 0 10px;
         margin-bottom: 50px;
+        border: 2px solid green;
     }
 
     ul {

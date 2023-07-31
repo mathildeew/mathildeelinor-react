@@ -12,7 +12,7 @@ export const HomeContainer = styled.div`
       justify: "unset",
     })}
     span {
-      font-size: 24vw;
+      font-size: 20vw;
     }
     span:nth-child(2) {
       position: absolute;
@@ -26,7 +26,7 @@ export const HomeContainer = styled.div`
   }
 
   nav {
-    font-size: 4rem;
+    font-size: 3rem;
 
     li {
       margin-bottom: 15px;
