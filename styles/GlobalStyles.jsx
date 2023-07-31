@@ -25,6 +25,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     main {
+        width: 100%;
         margin-left: 10px;
         margin-right: 10px;
         margin-bottom: 50px;
