@@ -16,4 +16,14 @@ export const PortfolioContainer = styled.main`
     width: 100%;
     margin-bottom: 20px;
   }
+
+  .bulk p:nth-child(4) {
+    margin-bottom: 20px;
+  }
+
+  a {
+    font-family: montserrat, sans-serif;
+    font-size: 1.4rem;
+    margin-right: 20px;
+  }
 `;

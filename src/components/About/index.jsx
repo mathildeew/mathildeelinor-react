@@ -16,7 +16,9 @@ export default function About() {
       <AboutContainer>
         <div className="top intro">
           <h1>About</h1>
-          <div className="portrait"></div>
+          <div className="wrapper sections">
+            <div className="portrait"></div>
+          </div>
         </div>
 
         <section className="sections text">

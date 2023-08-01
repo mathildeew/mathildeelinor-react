@@ -6,6 +6,8 @@ export const projects = [
     description: "The final exam at Noroff.",
     image:
       "../../public/projects/244098608-8ba2283c-eba2-415e-8324-8e47c583f01f.png",
+    github: "",
+    link: "",
   },
   {
     id: 4,
@@ -15,6 +17,8 @@ export const projects = [
       "Sjåpp is an online shop made for the course JavaScript Frameworks in the final semester at Noroff.",
     image:
       "../../public/projects/244098608-8ba2283c-eba2-415e-8324-8e47c583f01f.png",
+    github: "",
+    link: "",
   },
   {
     id: 3,
@@ -23,6 +27,8 @@ export const projects = [
     description: "Gavel is an online auction site made for Semester Project 2.",
     image:
       "../../public/projects/244098608-8ba2283c-eba2-415e-8324-8e47c583f01f.png",
+    github: "",
+    link: "",
   },
   {
     id: 2,
@@ -32,6 +38,8 @@ export const projects = [
       "This project is assigned by Cerchio Studio, a fictional ceramic studio. The final product is a blog site with its content stored as a headless Content Management System.",
     image:
       "../../public/projects/244098608-8ba2283c-eba2-415e-8324-8e47c583f01f.png",
+    github: "",
+    link: "",
   },
   {
     id: 1,
@@ -41,5 +49,7 @@ export const projects = [
       "The website for Community Science Museum, a fictional museum. The brief was to make a informative and engaging website, that should be responsive and easy to use on a variety of devices.",
     image:
       "../../public/projects/244098608-8ba2283c-eba2-415e-8324-8e47c583f01f.png",
+    github: "",
+    link: "",
   },
 ];

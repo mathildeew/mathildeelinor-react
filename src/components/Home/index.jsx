@@ -12,7 +12,7 @@ export default function Home() {
       <section>
         <div className="sections">
           <p>Front-end developer.</p>
-          <p>Currently working as an optometrist.</p>
+          <p>Currently studying at Noroff and working as an optometrist.</p>
         </div>
 
         <nav>

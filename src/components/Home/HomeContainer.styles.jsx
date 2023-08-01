@@ -3,16 +3,15 @@ import { displayFlex } from "../../../styles/mixins";
 
 export const HomeContainer = styled.main`
   .intro {
-    height: 150px;
+    align-items: flex-end;
+    max-height: 366px;
   }
 
   span {
-    font-size: 20vw;
+    font-size: 8rem;
   }
+
   span:nth-child(2) {
-    position: absolute;
-    top: 70px;
-    right: 0;
   }
 
   nav {
@@ -20,6 +19,12 @@ export const HomeContainer = styled.main`
 
     li {
       margin-bottom: 15px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    nav {
+      font-size: 5rem;
     }
   }
 `;
