@@ -39,9 +39,10 @@ export default function About() {
         </section>
 
         <div className="sections">
-          <BaseButton>My CV</BaseButton>
           <BaseButton>
-            <Link to="/contact">Contact me</Link>
+            <Link to="../../../public/cv0.pdf" target="_blank">
+              My CV
+            </Link>
           </BaseButton>
         </div>
 

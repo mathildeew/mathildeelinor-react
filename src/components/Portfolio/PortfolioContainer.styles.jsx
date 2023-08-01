@@ -6,7 +6,14 @@ export const PortfolioContainer = styled.main`
     left: -14px;
   }
 
+  .intro {
+    p:first-child {
+      margin-bottom: 20px;
+    }
+  }
+
   img {
     width: 100%;
+    margin-bottom: 20px;
   }
 `;

@@ -55,7 +55,16 @@ ul {
     }
 
     h2 {
-        font-size: 1.8rem;;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 8px;
+    }
+
+    h3 {
+        font-family: montserrat, sans-serif;
+        font-size: 1.4rem;
+        font-weight: 600;
     }
 
     a {
@@ -66,7 +75,7 @@ ul {
         color: var(--color-primary);
     }
 
-    h1, h2, a, span {
+    h1, a, span {
         font-family: Fromage, serif;
     }
 

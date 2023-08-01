@@ -26,8 +26,7 @@ export const AboutContainer = styled.main`
     z-index: 1;
   }
 
-  .text p:first-child,
-  button:first-child {
+  .text p:first-child {
     margin-bottom: 20px;
   }
 
