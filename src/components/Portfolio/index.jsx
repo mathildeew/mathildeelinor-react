@@ -13,9 +13,10 @@ export default function Portfolio() {
       </HelmetProvider>
 
       <PortfolioContainer>
-        <div className="top">
+        {/* <div className="top">
           <h1>Portfolio</h1>
-        </div>
+        </div> */}
+
         <main>
           <section className="intro sections">
             <p>

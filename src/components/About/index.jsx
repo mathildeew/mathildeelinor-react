@@ -14,12 +14,12 @@ export default function About() {
       </HelmetProvider>
 
       <AboutContainer>
-        <div className="top intro">
+        {/* <div className="top intro">
           <h1>About</h1>
           <div className="wrapper sections">
             <div className="portrait"></div>
           </div>
-        </div>
+        </div> */}
 
         <section className="sections text">
           <p>

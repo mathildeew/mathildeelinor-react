@@ -4,15 +4,17 @@ import { HomeContainer } from "./HomeContainer.styles";
 export default function Home() {
   return (
     <HomeContainer>
-      <div className="top intro">
-        <span>Mathilde</span>
-        <span>Elinor</span>
-      </div>
+      <div className="wrapper">
+        <div className="wrapperRight">
+          <div className="top">
+            <span>Mathilde</span>
+            <span>Elinor</span>
+          </div>
 
-      <section>
-        <div className="sections">
-          <p>Front-end developer.</p>
-          <p>Currently studying at Noroff and working as an optometrist.</p>
+          <div className="text">
+            <p>Front-end developer.</p>
+            <p>Currently studying at Noroff and working as an optometrist.</p>
+          </div>
         </div>
 
         <nav>
@@ -28,7 +30,7 @@ export default function Home() {
             </li>
           </ul>
         </nav>
-      </section>
+      </div>
     </HomeContainer>
   );
 }

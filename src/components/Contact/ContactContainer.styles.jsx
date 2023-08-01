@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const ContactContainer = styled.main`
   h1 {
     font-size: 28vw;
-    left: -10px;
+    position: relative;
+    left: -15px;
   }
 
   p:first-child {
