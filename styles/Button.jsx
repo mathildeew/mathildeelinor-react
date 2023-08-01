@@ -9,7 +9,6 @@ export const BaseButton = styled.button`
   padding: 10px 25px;
   border-radius: 50px;
   border: 2px solid var(--color-secondary);
-  margin-bottom: 20px;
   display: block;
 
   a {

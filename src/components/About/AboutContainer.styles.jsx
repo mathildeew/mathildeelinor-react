@@ -1,19 +1,22 @@
 import styled from "styled-components";
 
 export const AboutContainer = styled.div`
+  border: 2px solid green;
+
   .aboutTop {
     height: 300px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     position: relative;
   }
 
   h1 {
-    font-size: 33vw;
+    font-size: 37vw;
     position: absolute;
     z-index: 2;
+    left: -10px;
   }
 
-  .selfImg {
+  .portrait {
     background: url("../../../public/self2.jpg");
     height: 73.5vw; /* 220px*/
     width: 60vw; /* 180px */
@@ -29,14 +32,19 @@ export const AboutContainer = styled.div`
     z-index: 1;
   }
 
-  .aboutSection {
-    margin-bottom: 40px;
-  }
-
   .aboutText {
     p:first-child {
       margin-bottom: 20px;
     }
+  }
+
+  .aboutSection,
+  .buttons {
+    margin-bottom: 40px;
+  }
+
+  button:first-child {
+    margin-bottom: 20px;
   }
 
   .bulk {

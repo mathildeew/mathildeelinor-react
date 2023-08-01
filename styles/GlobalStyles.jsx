@@ -5,13 +5,15 @@ export const GlobalStyle = createGlobalStyle`
 * {
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
     html {
         --color-primary: #3e3e3e;
         --color-secondary: #f2faff;
         height: 100%;
-        font-size: 62.5%
+        font-size: 62.5%;
+        
     }
 
     body {
@@ -21,14 +23,19 @@ export const GlobalStyle = createGlobalStyle`
         min-height: 100vh;
         display: flex;
         flex-direction: column;
+
     }
 
     main {
         width: 100%;
         max-width: 565px;
-        padding: 0 10px;
+        /* padding: 0 10px; */
         margin-bottom: 50px;
         border: 2px solid green;
+    }
+
+    section {
+        padding: 0 10px;
     }
 
     ul {

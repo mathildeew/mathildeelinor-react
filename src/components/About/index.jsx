@@ -8,7 +8,7 @@ export default function About() {
     <AboutContainer>
       <div className="aboutTop">
         <h1>About</h1>
-        <div className="selfImg"></div>
+        <div className="portrait"></div>
       </div>
 
       <section className="aboutSection aboutText">
@@ -29,10 +29,12 @@ export default function About() {
         </p>
       </section>
 
-      <BaseButton>My CV</BaseButton>
-      <BaseButton>
-        <Link to="/contact">Contact me</Link>
-      </BaseButton>
+      <div className="buttons">
+        <BaseButton>My CV</BaseButton>
+        <BaseButton>
+          <Link to="/contact">Contact me</Link>
+        </BaseButton>
+      </div>
 
       <section className="aboutSection">
         <h2>Skills</h2>

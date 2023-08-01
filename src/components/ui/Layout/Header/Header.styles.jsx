@@ -6,6 +6,7 @@ export const HeaderContainer = styled.header`
   align-items: center;
   font-size: 1.6rem;
   border: 2px solid red;
+  margin-bottom: 30px;
 
   a {
     margin-left: 10px;
