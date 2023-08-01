@@ -1,7 +1,24 @@
 import styled from "styled-components";
 
-export const ContactContainer = styled.section`
+export const ContactContainer = styled.main`
   h1 {
-    font-size: 26vw;
+    font-size: 28vw;
+    left: -10px;
+  }
+
+  p:first-child {
+    margin-bottom: 20px;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+    width: 130px;
+    align-items: center;
+  }
+
+  a {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.4rem;
   }
 `;

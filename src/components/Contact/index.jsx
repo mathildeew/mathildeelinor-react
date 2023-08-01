@@ -4,13 +4,18 @@ import { ContactContainer } from "./ContactContainer.styles";
 export default function Contact() {
   return (
     <ContactContainer>
-      <h1>Contact</h1>
-      <div>
-        <p>Email: hei@mathildeelinor.no</p>
-        <p>On the internet:</p>
-        <Link to="linkedin.com">LinkedIn</Link>
-        <Link to="github.com">GitHub</Link>
+      <div className="top">
+        <h1>Contact</h1>
       </div>
+
+      <section>
+        <p> hei@mathildeelinor.no</p>
+        <div className="links">
+          <Link to="linkedin.com">LinkedIn</Link>
+          <p>/</p>
+          <Link to="github.com">GitHub</Link>
+        </div>
+      </section>
     </ContactContainer>
   );
 }

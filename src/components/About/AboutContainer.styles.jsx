@@ -1,18 +1,12 @@
 import styled from "styled-components";
 
-export const AboutContainer = styled.div`
-  border: 2px solid green;
-
-  .aboutTop {
+export const AboutContainer = styled.main`
+  .intro {
     height: 300px;
-    margin-bottom: 35px;
-    position: relative;
   }
 
   h1 {
     font-size: 37vw;
-    position: absolute;
-    z-index: 2;
     left: -10px;
   }
 
@@ -32,17 +26,7 @@ export const AboutContainer = styled.div`
     z-index: 1;
   }
 
-  .aboutText {
-    p:first-child {
-      margin-bottom: 20px;
-    }
-  }
-
-  .aboutSection,
-  .buttons {
-    margin-bottom: 40px;
-  }
-
+  .text p:first-child,
   button:first-child {
     margin-bottom: 20px;
   }

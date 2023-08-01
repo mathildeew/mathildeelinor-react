@@ -3,47 +3,49 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
 
 * {
-    margin: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
+margin: 0;
+box-sizing: border-box;
+overflow-x: hidden;
 }
 
-    html {
-        --color-primary: #3e3e3e;
-        --color-secondary: #f2faff;
-        height: 100%;
-        font-size: 62.5%;
-        
-    }
+html {
+    --color-primary: #3e3e3e;
+    --color-secondary: #f2faff;
+    height: 100%;
+    font-size: 62.5%;
+}
 
-    body {
-        color: var(--color-primary);
-        background-color: var(--color-secondary);
-        width: 100vw;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
+body {
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
-    }
+main {
+    width: 100%;
+    max-width: 565px;
+    /* padding: 0 10px; */
+    margin-bottom: 50px;
+}
 
-    main {
-        width: 100%;
-        max-width: 565px;
-        /* padding: 0 10px; */
-        margin-bottom: 50px;
-        border: 2px solid green;
-    }
+section {
+    padding: 0 10px;
+}
 
-    section {
-        padding: 0 10px;
-    }
-
-    ul {
-        padding: 0;
-    }
+ul {
+    padding: 0;
+}
 
     li {
         list-style: none;
+    }
+
+    h1 {
+        position: absolute;
+        z-index: 2;
     }
 
     h2 {
@@ -68,4 +70,13 @@ export const GlobalStyle = createGlobalStyle`
         line-height: 2.5rem;
     }
 
-`;
+    .top {
+    position: relative;
+    height: 100px;
+    margin-bottom: 50px;
+    }
+
+    .sections {
+    margin-bottom: 50px;
+    }
+    `;

@@ -1,17 +1,17 @@
 import { Link } from "react-router-dom";
-import { BaseButton } from "../../../styles/Button";
 import { education, experience } from "../../js/about";
 import { AboutContainer } from "./AboutContainer.styles";
+import { BaseButton } from "../../../styles/Button";
 
 export default function About() {
   return (
     <AboutContainer>
-      <div className="aboutTop">
+      <div className="top intro">
         <h1>About</h1>
         <div className="portrait"></div>
       </div>
 
-      <section className="aboutSection aboutText">
+      <section className="sections text">
         <p>
           As long as I can remember I have been drawn to combining technology
           and design. The infinite potential has always fascinated me and I have
@@ -29,21 +29,21 @@ export default function About() {
         </p>
       </section>
 
-      <div className="buttons">
+      <div className="sections">
         <BaseButton>My CV</BaseButton>
         <BaseButton>
           <Link to="/contact">Contact me</Link>
         </BaseButton>
       </div>
 
-      <section className="aboutSection">
+      <section className="sections">
         <h2>Skills</h2>
         <p>HTML, CSS/SASS, JavaScript, React</p>
         <p>Git, Bootstrap, Wordpress, Git</p>
         <p>Adobe XD, Figma, Photoshop, Illustrator</p>
       </section>
 
-      <section className="aboutSection">
+      <section className="sections">
         <h2>Experience</h2>
 
         {experience.map((job) => (
@@ -57,7 +57,7 @@ export default function About() {
         ))}
       </section>
 
-      <section className="aboutSection">
+      <section className="sections">
         <h2>Education</h2>
 
         {education.map((course) => (
