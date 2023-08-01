@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.main`
   .intro {
-    height: 300px;
+    height: 320px;
   }
 
   h1 {

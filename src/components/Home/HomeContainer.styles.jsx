@@ -4,7 +4,6 @@ import { displayFlex } from "../../../styles/mixins";
 export const HomeContainer = styled.main`
   .intro {
     height: 150px;
-    border: 2px solid red;
   }
 
   span {

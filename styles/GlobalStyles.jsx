@@ -8,27 +8,33 @@ box-sizing: border-box;
 overflow-x: hidden;
 }
 
+
+
 html {
     --color-primary: #3e3e3e;
     --color-secondary: #f2faff;
-    height: 100%;
     font-size: 62.5%;
+
+}
+
+#root {
+    min-height: 100vh;;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
     color: var(--color-primary);
     background-color: var(--color-secondary);
     width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+   
 }
 
 main {
     width: 100%;
     max-width: 565px;
-    /* padding: 0 10px; */
     margin-bottom: 50px;
+    flex-grow: 1;
 }
 
 section {
@@ -72,7 +78,7 @@ ul {
 
     .top {
     position: relative;
-    height: 100px;
+    height: 120px;
     margin-bottom: 50px;
     }
 

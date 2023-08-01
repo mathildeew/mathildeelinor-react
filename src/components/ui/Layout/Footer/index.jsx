@@ -3,7 +3,7 @@ import { FooterContainer } from "./FooterContainer.styles";
 export default function Footer() {
   return (
     <FooterContainer>
-      <p>Mathilde Elinor Wiik</p>
+      <p>© 2023 Mathilde Elinor Wiik</p>
     </FooterContainer>
   );
 }
