@@ -4,7 +4,8 @@ import { displayFlex } from "../../../styles/mixins";
 export const HomeContainer = styled.div`
   .homeTop {
     position: relative;
-    margin-bottom: 30%;
+    margin-bottom: 20%;
+    height: 150px;
 
     ${displayFlex({
       direction: "column",
@@ -16,7 +17,7 @@ export const HomeContainer = styled.div`
     }
     span:nth-child(2) {
       position: absolute;
-      top: 70%;
+      top: 70px;
       right: 0;
     }
   }

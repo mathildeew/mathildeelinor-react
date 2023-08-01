@@ -1,9 +1,18 @@
 import styled from "styled-components";
 
-export const PortfolioContainer = styled.section`
+export const PortfolioContainer = styled.div`
+  .test {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 70px;
+  }
+
   h1 {
-    font-size: 24vw;
+    font-size: 26vw;
     margin-bottom: 40px;
+    left: -14px;
+    position: absolute;
   }
 
   img {
@@ -11,6 +20,6 @@ export const PortfolioContainer = styled.section`
   }
 
   .bulk {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 `;
