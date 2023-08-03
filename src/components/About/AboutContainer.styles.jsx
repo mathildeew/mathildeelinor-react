@@ -1,41 +1,42 @@
 import styled from "styled-components";
 
 export const AboutContainer = styled.main`
-  .intro {
-    min-height: 200px;
-    max-height: 350px;
-    width: 100%;
-    max-width: 320px;
-  }
-
   h1 {
-    font-size: 10rem;
-    position: absolute;
-  }
-
-  .wrapper {
-    width: 100%;
-    height: 290px;
-    border: 2px solid blue;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: end;
-    padding-right: 10px;
+    font-size: 11.8rem;
+    position: relative;
+    left: -6px;
+    z-index: 2;
+    text-align: center;
   }
 
   .portrait {
     background: url("../../../public/self2.jpg");
-    height: 220px; /* 220px*/
-    width: 180px; /* 180px */
+    /* height: 73.3vw;
+    max-height: 482px;
+    width: 60vw;
+    max-width: 390px; */
+    width: 180px;
+    height: 220px;
     background-size: cover;
     background-position: top center;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
-    /* position: absolute; */
-    /* right: 10px; */
-    /* top: 70px; */
+    margin-left: 200px;
+    position: relative;
+    top: -60px;
     z-index: 1;
+  }
+
+  .intro {
+    margin-bottom: 190px;
+    border: 2px solid red;
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .left {
+    max-width: 600px;
+    border: 2px solid blue;
   }
 
   .text p:first-child {
@@ -57,6 +58,15 @@ export const AboutContainer = styled.main`
   .boldText {
     font-weight: 600;
   }
+
+  @media (min-width: 1025px) {
+    .wrapper {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
+
   /* 
   @media (min-width: 506px) {
     h1 {

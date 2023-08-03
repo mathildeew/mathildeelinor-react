@@ -36,8 +36,8 @@ main {
 }
 
 .wrapper {
-  padding: 0 10px;
-  max-width: 950px;
+  padding: 0 32px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -80,6 +80,10 @@ ul {
 li {
   list-style: none;
 }
+
+.part {
+    margin-bottom: 40px;
+  }
 
 
 /*

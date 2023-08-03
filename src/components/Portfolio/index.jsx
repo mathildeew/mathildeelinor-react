@@ -13,34 +13,38 @@ export default function Portfolio() {
       </HelmetProvider>
 
       <PortfolioContainer>
-        {/* <div className="top">
-          <h1>Portfolio</h1>
-        </div> */}
-
         <main>
-          <section className="intro sections">
-            <p>
-              This is a showcase of my best work from the Front-end development
-              course at Noroff.
-            </p>
-            <p>
-              Even though my primary focus lies in crafting create
-              well-structured, readable and maintainable code, I have also
-              developed a deep appreciation for the creative aspects of the
-              design process.
-            </p>
-          </section>
+          <div className="part">
+            <h1>Portfolio</h1>
+          </div>
 
-          {projects.map((project) => (
-            <section className="bulk sections">
-              <img src={project.image} />
-              <h2>{project.name}</h2>
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-              <Link to={project.link}>Check out</Link>
-              <Link to={project.github}>GitHub</Link>
+          <div className="wrapper">
+            <section className="intro part">
+              <p>
+                This is a showcase of my best work from the Front-end
+                development course at Noroff.
+              </p>
+              <p>
+                Even though my primary focus lies in crafting create
+                well-structured, readable and maintainable code, I have also
+                developed a deep appreciation for the creative aspects of the
+                design process.
+              </p>
             </section>
-          ))}
+
+            <section className="projects">
+              {projects.map((project) => (
+                <div className="bulk">
+                  <img src={project.image} />
+                  <h2>{project.name}</h2>
+                  <h3>{project.title}</h3>
+                  <p>{project.description}</p>
+                  <Link to={project.link}>Check out</Link>
+                  <Link to={project.github}>GitHub</Link>
+                </div>
+              ))}
+            </section>
+          </div>
         </main>
       </PortfolioContainer>
     </>

@@ -13,18 +13,16 @@ export default function Contact() {
 
       <ContactContainer>
         <div className="wrapper">
-          <div className="top">
+          <div className="part">
             <h1>Contact</h1>
           </div>
 
-          <section>
-            <p> hei@mathildeelinor.no</p>
-            <div className="links">
-              <Link to="linkedin.com">LinkedIn</Link>
-              <p>/</p>
-              <Link to="github.com">GitHub</Link>
-            </div>
-          </section>
+          <p> hei@mathildeelinor.no</p>
+          <div className="links">
+            <Link to="linkedin.com">LinkedIn</Link>
+            <p>/</p>
+            <Link to="github.com">GitHub</Link>
+          </div>
         </div>
       </ContactContainer>
     </>

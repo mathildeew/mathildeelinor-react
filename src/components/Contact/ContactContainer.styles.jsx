@@ -4,7 +4,7 @@ export const ContactContainer = styled.main`
   h1 {
     font-size: 28vw;
     position: relative;
-    left: -15px;
+    left: -43px;
   }
 
   p:first-child {
@@ -21,5 +21,16 @@ export const ContactContainer = styled.main`
   a {
     font-family: Montserrat, sans-serif;
     font-size: 1.4rem;
+  }
+
+  .wrapper {
+    max-width: 700px;
+  }
+
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 215px;
+      text-align: center;
+    }
   }
 `;
