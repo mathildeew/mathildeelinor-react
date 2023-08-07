@@ -4,6 +4,11 @@ import { displayFlex } from "../../../styles/mixins";
 export const HomeContainer = styled.main`
   margin-bottom: 20px;
 
+  .wrapper {
+    padding: 0 32px;
+    margin: 50px auto;
+  }
+
   nav {
     font-size: 15vw;
   }

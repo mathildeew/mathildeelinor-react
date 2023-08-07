@@ -29,10 +29,6 @@ main {
   width: 100%;
   margin: 0 auto;
   flex-grow: 1;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
-  /* border: 2px solid blue; */
 }
 
 .wrapper {

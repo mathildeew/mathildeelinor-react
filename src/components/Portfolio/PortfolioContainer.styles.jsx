@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
 export const PortfolioContainer = styled.main`
+  .wrapper {
+    padding: 0 32px;
+    margin: 50px auto;
+  }
+
   h1 {
     font-size: 26vw;
     position: relative;
