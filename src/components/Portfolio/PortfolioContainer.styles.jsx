@@ -1,23 +1,11 @@
 import styled from "styled-components";
 
 export const PortfolioContainer = styled.main`
-  .wrapper {
-    padding: 0 32px;
-    margin: 50px auto;
-  }
-
   h1 {
     font-size: 26vw;
     position: relative;
     left: -18px;
   }
-
-  /* .top {
-    position: relative;
-    height: 100px;
-    border: 2px solid red;
-    margin-bottom: 30px;
-  } */
 
   .intro {
     max-width: 700px;
@@ -25,6 +13,12 @@ export const PortfolioContainer = styled.main`
     p:first-child {
       margin-bottom: 20px;
     }
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 40px;
   }
 
   img {
@@ -49,10 +43,9 @@ export const PortfolioContainer = styled.main`
     }
 
     .projects {
-      display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-column-gap: 20px;
-      grid-row-gap: 20px;
+      grid-column-gap: 30px;
+      grid-row-gap: 50px;
     }
   }
 `;

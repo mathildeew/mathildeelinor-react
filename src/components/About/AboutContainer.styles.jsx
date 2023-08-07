@@ -52,10 +52,6 @@ export const AboutContainer = styled.main`
     margin: 0 9%;
   }
 
-  .part {
-    margin-bottom: 40px;
-  }
-
   .text p:first-child {
     margin-bottom: 20px;
   }

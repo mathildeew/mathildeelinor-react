@@ -11,7 +11,7 @@ export default function Home() {
             <span>Elinor</span>
           </div>
 
-          <div className="text">
+          <div className="part">
             <p>Front-end developer.</p>
             <p>Currently studying at Noroff and working as an optometrist.</p>
           </div>

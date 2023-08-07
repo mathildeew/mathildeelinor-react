@@ -76,25 +76,14 @@ li {
   list-style: none;
 }
 
-.part {
-    margin-bottom: 40px;
+.wrapper {
+    max-width: 700px;
+    padding: 0 32px;
+    margin: 50px auto;
   }
 
-
-/*
-
-.top {
-  width: 100%;
-  height: 100%;
-  margin-bottom: 20px;
-  border: 2px solid red;
-  display: flex;
-  flex-direction: column; 
-}
-
- */
-
-/* Media quieries */
-
+.part {
+    margin-bottom: 50px;
+  }
 
 `;

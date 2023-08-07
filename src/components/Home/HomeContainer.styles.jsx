@@ -2,13 +2,6 @@ import styled from "styled-components";
 import { displayFlex } from "../../../styles/mixins";
 
 export const HomeContainer = styled.main`
-  margin-bottom: 20px;
-
-  .wrapper {
-    padding: 0 32px;
-    margin: 50px auto;
-  }
-
   nav {
     font-size: 15vw;
   }
@@ -26,10 +19,6 @@ export const HomeContainer = styled.main`
     }
   }
 
-  .text {
-    margin-bottom: 40px;
-  }
-
   @media (min-width: 438px) {
     .top {
       width: 439px;
@@ -40,15 +29,12 @@ export const HomeContainer = styled.main`
   }
 
   @media (min-width: 1025px) {
-    main {
-      width: 100%;
-    }
-
     .wrapper {
       height: 80vh;
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      justify-content: space-between;
+      max-width: 1000px;
     }
 
     .top {
