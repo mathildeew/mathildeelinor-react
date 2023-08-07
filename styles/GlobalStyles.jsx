@@ -6,8 +6,8 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 html {
-  --color-primary: #3e3e3e;
-  --color-secondary: #f2faff;
+  --color-primary: #39469B;
+  --color-secondary:  #E7D0B9;
   font-size: 62.5%;
 }
 
@@ -36,8 +36,7 @@ main {
 }
 
 .wrapper {
-  padding: 0 32px;
-  max-width: 1200px;
+  /* padding: 0 32px; */
   margin: 0 auto;
 }
 
