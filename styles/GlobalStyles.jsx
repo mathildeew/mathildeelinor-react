@@ -7,7 +7,7 @@ export const GlobalStyle = createGlobalStyle`
 
 html {
   --color-primary: #39469B;
-  --color-secondary:  #E7D0B9;
+  --color-secondary:  #F4E6D7;
   font-size: 62.5%;
 }
 
