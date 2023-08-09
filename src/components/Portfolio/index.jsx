@@ -3,7 +3,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { motion as m } from "framer-motion";
 import { projects } from "../../js/projects";
 import { PortfolioContainer } from "./PortfolioContainer.styles";
-import Navbar from "../ui/Layout/Navbar/navContainer";
+import Navbar from "../ui/Layout/Navbar";
 
 export default function Portfolio() {
   return (

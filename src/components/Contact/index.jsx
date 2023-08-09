@@ -1,7 +1,7 @@
 import { motion as m } from "framer-motion";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import Navbar from "../ui/Layout/Navbar/navContainer";
+import Navbar from "../ui/Layout/Navbar";
 import { ContactContainer } from "./ContactContainer.styles";
 
 export default function Contact() {

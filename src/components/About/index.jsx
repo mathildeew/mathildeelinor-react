@@ -4,7 +4,7 @@ import { AboutContainer } from "./AboutContainer.styles";
 import { BaseButton } from "../../../styles/Button";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { motion as m } from "framer-motion";
-import Navbar from "../ui/Layout/Navbar/navContainer";
+import Navbar from "../ui/Layout/Navbar";
 
 export default function About() {
   return (
