@@ -12,18 +12,18 @@ export const AboutContainer = styled.main`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 9%;
+    margin: 0 32px;
+  }
 
-    h1 {
-      font-size: 5rem;
-      margin-bottom: 60px;
-    }
+  h1 {
+    font-size: 10rem;
+    margin-bottom: 40px;
+  }
 
-    span {
-      font-family: Montserrat;
-      font-size: 1.6rem;
-      line-height: 2;
-    }
+  span {
+    font-family: Montserrat;
+    font-size: 1.6rem;
+    line-height: 2;
   }
 
   .blue {
@@ -45,11 +45,6 @@ export const AboutContainer = styled.main`
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
     box-shadow: 6px -6px 0px 0px var(--color-secondary);
-  }
-
-  .content {
-    max-width: 720px;
-    margin: 0 9%;
   }
 
   .text p:first-child {
@@ -85,7 +80,7 @@ export const AboutContainer = styled.main`
     .topWrapper {
       width: 100%;
       height: 55vw;
-      max-height: 625px;
+      max-height: 550px;
       display: flex;
       margin-bottom: 50px;
     }
@@ -96,13 +91,13 @@ export const AboutContainer = styled.main`
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      margin-right: 80px;
+      margin-right: 45px;
     }
 
     .left {
       width: 320px;
       flex-direction: column;
-      margin-left: 20%;
+      margin: 0;
     }
 
     .portraitBig {

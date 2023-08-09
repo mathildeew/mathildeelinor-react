@@ -31,7 +31,7 @@ export default function About() {
           </div>
         </section>
 
-        <div className="content">
+        <div className="wrapper">
           <div className="text part">
             <p>
               As long as I can remember I have been drawn to combining

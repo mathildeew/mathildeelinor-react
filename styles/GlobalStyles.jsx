@@ -9,14 +9,14 @@ html {
   --color-primary: #39469B;
   --color-secondary:  #F4E6D7;
   font-size: 62.5%;
+  overflow-x: hidden;
+
 }
 
 #root {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
-
 }
 
 body {
@@ -32,7 +32,7 @@ main {
 }
 
 .wrapper {
-  /* padding: 0 32px; */
+  padding: 0 32px;
   margin: 0 auto;
 }
 
