@@ -12,7 +12,6 @@ export default function Contact() {
         </Helmet>
       </HelmetProvider>
       <m.div
-        className="transitionBackground"
         initial={{
           background: "#39469B",
           width: "100vw",
@@ -41,11 +40,15 @@ export default function Contact() {
             initial={{ y: "50%" }}
             transition={{ delay: 0.5, duration: 0.5 }}
           >
-            <p> hei@mathildeelinor.no</p>
+            <Link to="mailto: hei@mathildeelinor.no">
+              hei@mathildeelinor.no
+            </Link>
             <div className="links">
-              <Link to="linkedin.com">LinkedIn</Link>
+              <Link to="https://www.linkedin.com/in/mathilde-elinor-wiik-88075b249/">
+                LinkedIn
+              </Link>
               <p>/</p>
-              <Link to="github.com">GitHub</Link>
+              <Link to="https://github.com/mathildeew">GitHub</Link>
             </div>
           </m.div>
         </div>

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { displayFlex } from "../../../styles/mixins";
 
 export const AboutContainer = styled.main`
   .top {
@@ -7,12 +8,14 @@ export const AboutContainer = styled.main`
   }
 
   .left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin: 0 32px;
     overflow: hidden;
+
+    ${displayFlex({
+      direction: "column",
+      align: "center",
+      justify: "center",
+    })}
   }
 
   h1 {
@@ -26,14 +29,17 @@ export const AboutContainer = styled.main`
     line-height: 2;
   }
 
-  .blue {
+  #blue {
     background-color: var(--color-primary);
     width: 100%;
     height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 50px;
+
+    ${displayFlex({
+      direction: "column",
+      align: "center",
+      justify: "center",
+    })}
   }
 
   .portrait {
@@ -47,7 +53,7 @@ export const AboutContainer = styled.main`
     box-shadow: 6px -6px 0px 0px var(--color-secondary);
   }
 
-  .text p:first-child {
+  #text p:first-child {
     margin-bottom: 20px;
   }
 
@@ -76,7 +82,7 @@ export const AboutContainer = styled.main`
       display: none;
     }
 
-    .blue {
+    #blue {
       width: 50%;
       height: auto;
     }
@@ -92,10 +98,12 @@ export const AboutContainer = styled.main`
     .top {
       width: 50%;
       height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
       margin-right: 45px;
+
+      ${displayFlex({
+        align: "center",
+        justify: "flex-end",
+      })}
     }
 
     .left {
@@ -116,12 +124,6 @@ export const AboutContainer = styled.main`
       box-shadow: 6px -6px 0px 0px var(--color-secondary);
       position: absolute;
       left: 50%;
-    }
-  }
-
-  @media (min-width: 880px) {
-    .content {
-      margin: 0 auto;
     }
   }
 `;

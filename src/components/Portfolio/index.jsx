@@ -15,7 +15,6 @@ export default function Portfolio() {
 
       <PortfolioContainer>
         <m.div
-          className="transitionBackground"
           initial={{
             background: "#39469B",
             width: "100vw",

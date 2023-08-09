@@ -15,16 +15,15 @@ export default function About() {
       </HelmetProvider>
 
       <m.div
-        className="transitionBackground"
         initial={{
           background: "#39469B",
           width: "100vw",
           height: "100vh",
           position: "absolute",
-          zIndex: 1,
+          zIndex: "1",
         }}
-        animate={{ y: "-100%", x: "100%" }}
-        transition={{ delay: 0.2, duration: 0.7, ease: "easeInOut" }}
+        animate={{ y: "-100%" }}
+        transition={{ delay: 0.2, duration: 0.5, ease: "easeInOut" }}
       ></m.div>
 
       <AboutContainer>
@@ -38,6 +37,7 @@ export default function About() {
               >
                 About
               </m.h1>
+
               <m.span
                 animate={{ y: 0 }}
                 initial={{ y: "100%" }}
@@ -55,14 +55,14 @@ export default function About() {
               transition={{ delay: 0.4, duration: 0.5 }}
             ></m.div>
           </div>
-          <div className="blue">
+          <m.div id="blue">
             <m.div
               className="portrait"
               animate={{ opacity: 1 }}
               initial={{ opacity: 0 }}
               transition={{ delay: 0.8, duration: 0.5 }}
             ></m.div>
-          </div>
+          </m.div>
         </section>
 
         <m.div
@@ -71,7 +71,7 @@ export default function About() {
           initial={{ y: "10%", opacity: 0 }}
           transition={{ delay: 0.5, duration: 0.5 }}
         >
-          <div className="text part">
+          <div id="text" className="part">
             <p>
               As long as I can remember I have been drawn to combining
               technology and design. The infinite potential has always
@@ -99,7 +99,7 @@ export default function About() {
           <section className="part">
             <h2>Skills</h2>
             <p>HTML, CSS/SASS, JavaScript, React</p>
-            <p>Git, Bootstrap, Wordpress, Git</p>
+            <p>Git, Bootstrap, Wordpress, GitHub</p>
             <p>Adobe XD, Figma, Photoshop, Illustrator</p>
           </section>
 
@@ -107,7 +107,7 @@ export default function About() {
             <h2>Experience</h2>
 
             {experience.map((job) => (
-              <div className="bulk">
+              <div className="bulk" key={job.id}>
                 <div>
                   <p className="boldText">{job.title}</p>
                   <p>/ {job.company}</p>
@@ -121,7 +121,7 @@ export default function About() {
             <h2>Education</h2>
 
             {education.map((course) => (
-              <div className="bulk">
+              <div className="bulk" key={course.id}>
                 <div>
                   <p className="boldText">{course.title}</p>
                   <p>/ {course.school}</p>
