@@ -31,15 +31,12 @@ main {
   flex-grow: 1;
 }
 
-.wrapper {
-  padding: 0 32px;
-  margin: 0 auto;
-}
-
 h2 {
+  font-family: Montserrat, sans-serif;
   font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  font-weight: 600;
   margin-bottom: 8px;
 }
 
@@ -78,7 +75,7 @@ li {
 
 .wrapper {
     max-width: 700px;
-    padding: 0 32px;
+    padding: 0 8%;
     margin: 50px auto;
   }
 

@@ -3,6 +3,7 @@ import { education, experience } from "../../js/about";
 import { AboutContainer } from "./AboutContainer.styles";
 import { BaseButton } from "../../../styles/Button";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import { motion as m } from "framer-motion";
 
 export default function About() {
   return (
@@ -13,25 +14,68 @@ export default function About() {
         </Helmet>
       </HelmetProvider>
 
+      <m.div
+        className="transitionBackground"
+        initial={{
+          background: "#39469B",
+          width: "100vw",
+          height: "100vh",
+          position: "absolute",
+          zIndex: 1,
+        }}
+        animate={{ y: "-100%", x: "100%" }}
+        transition={{ delay: 0.2, duration: 0.5, ease: "easeInOut" }}
+      ></m.div>
+
       <AboutContainer>
         <section className="topWrapper">
           <div className="top">
             <div className="left">
-              <h1>About</h1>
-              <span>
+              <m.h1
+                animate={{ y: 0 }}
+                initial={{ y: "-100%" }}
+                transition={{ delay: 0.5, duration: 0.5 }}
+              >
+                About
+              </m.h1>
+              <m.span
+                animate={{ y: 0 }}
+                initial={{ y: "100%" }}
+                transition={{ delay: 0.5, duration: 0.5 }}
+              >
                 Hi, I am Mathilde Elinor. I like to create something something
                 and some more, a sentence with three lines.
-              </span>
+              </m.span>
             </div>
 
-            <div className="portraitBig"></div>
+            <m.div
+              className="portraitBig"
+              animate={{ opacity: 1 }}
+              initial={{ opacity: 0 }}
+              transition={{ delay: 0.4, duration: 0.5 }}
+            ></m.div>
           </div>
-          <div className="blue">
-            <div className="portrait"></div>
-          </div>
+          <m.div
+            className="blue"
+            // animate={{ opacity: 1 }}
+            // initial={{ opacity: 0 }}
+            // transition={{ delay: 0.5, duration: 0.5 }}
+          >
+            <m.div
+              className="portrait"
+              animate={{ opacity: 1 }}
+              initial={{ opacity: 0 }}
+              transition={{ delay: 0.8, duration: 0.5 }}
+            ></m.div>
+          </m.div>
         </section>
 
-        <div className="wrapper">
+        <m.div
+          className="wrapper"
+          animate={{ y: 0, opacity: 1 }}
+          initial={{ y: "10%", opacity: 0 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+        >
           <div className="text part">
             <p>
               As long as I can remember I have been drawn to combining
@@ -91,7 +135,7 @@ export default function About() {
               </div>
             ))}
           </section>
-        </div>
+        </m.div>
       </AboutContainer>
     </>
   );

@@ -12,11 +12,19 @@ export const ContactContainer = styled.main`
     justify-content: space-between;
     width: 130px;
     align-items: center;
+
+    p {
+      margin: 0 5px;
+    }
+  }
+
+  p {
+    font-size: 1.6rem;
   }
 
   a {
     font-family: Montserrat, sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 
   @media (min-width: 768px) {

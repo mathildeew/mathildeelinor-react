@@ -7,12 +7,12 @@ export const AboutContainer = styled.main`
   }
 
   .left {
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0 32px;
+    overflow: hidden;
   }
 
   h1 {

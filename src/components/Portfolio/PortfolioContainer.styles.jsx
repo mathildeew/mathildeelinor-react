@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const PortfolioContainer = styled.main`
+  overflow: hidden;
   h1 {
     font-size: 26vw;
     position: relative;
