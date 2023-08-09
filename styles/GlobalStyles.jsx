@@ -41,7 +41,7 @@ h2 {
 }
 
 h3 {
-  font-family: montserrat, sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 1.4rem;
     font-weight: 600;
 }

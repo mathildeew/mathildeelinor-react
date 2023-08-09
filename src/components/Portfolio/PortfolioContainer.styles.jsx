@@ -1,22 +1,19 @@
 import styled from "styled-components";
 
 export const PortfolioContainer = styled.main`
-  overflow: hidden;
   h1 {
-    font-size: 26vw;
-    position: relative;
-    left: -18px;
+    font-size: 6rem;
+    text-align: center;
+    margin-top: 50px;
   }
 
-  .intro {
-    max-width: 700px;
-
-    p:first-child {
-      margin-bottom: 20px;
-    }
+  #intro p:first-child,
+  .bulk p:nth-child(4),
+  img {
+    margin-bottom: 20px;
   }
 
-  .projects {
+  #projects {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 40px;
@@ -24,15 +21,10 @@ export const PortfolioContainer = styled.main`
 
   img {
     width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .bulk p:nth-child(4) {
-    margin-bottom: 20px;
   }
 
   a {
-    font-family: montserrat, sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 1.4rem;
     margin-right: 20px;
   }
@@ -40,10 +32,9 @@ export const PortfolioContainer = styled.main`
   @media (min-width: 768px) {
     h1 {
       font-size: 200px;
-      text-align: center;
     }
 
-    .projects {
+    #projects {
       grid-template-columns: repeat(2, 1fr);
       grid-column-gap: 30px;
       grid-row-gap: 50px;

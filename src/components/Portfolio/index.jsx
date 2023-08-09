@@ -1,6 +1,6 @@
-import { color, motion as m } from "framer-motion";
-import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import { Helmet, HelmetProvider } from "react-helmet-async";
+import { motion as m } from "framer-motion";
 import { projects } from "../../js/projects";
 import { PortfolioContainer } from "./PortfolioContainer.styles";
 
@@ -27,15 +27,13 @@ export default function Portfolio() {
           transition={{ delay: 0.2, duration: 0.5, ease: "easeInOut" }}
         ></m.div>
 
-        <div className="part">
-          <m.h1
-            animate={{ y: 0 }}
-            initial={{ y: "-10%" }}
-            transition={{ delay: 0.5, duration: 0.5 }}
-          >
-            Portfolio
-          </m.h1>
-        </div>
+        <m.h1
+          animate={{ y: 0 }}
+          initial={{ y: "-20px" }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+        >
+          Portfolio
+        </m.h1>
 
         <m.div
           className="wrapper"
@@ -43,7 +41,7 @@ export default function Portfolio() {
           initial={{ y: "2%" }}
           transition={{ delay: 0.5, duration: 0.5 }}
         >
-          <section className="intro part">
+          <div id="intro" className="part">
             <p>
               This is a showcase of my best work from the Front-end development
               course at Noroff.
@@ -54,9 +52,9 @@ export default function Portfolio() {
               developed a deep appreciation for the creative aspects of the
               design process.
             </p>
-          </section>
+          </div>
 
-          <section className="projects">
+          <div id="projects">
             {projects.map((project) => (
               <div className="bulk">
                 <img src={project.image} />
@@ -67,7 +65,7 @@ export default function Portfolio() {
                 <Link to={project.github}>GitHub</Link>
               </div>
             ))}
-          </section>
+          </div>
         </m.div>
       </PortfolioContainer>
     </>
