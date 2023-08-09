@@ -2,18 +2,14 @@ import styled from "styled-components";
 import { displayFlex } from "../../../styles/mixins";
 
 export const HomeContainer = styled.main`
-  nav {
-    font-size: 15vw;
-    width: 50%;
-    margin-top: 50px;
-  }
-
   .top {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
     height: 100%;
     margin-bottom: 40px;
+
+    ${displayFlex({
+      direction: "column",
+      align: "end",
+    })}
 
     span {
       font-size: 14vw;
@@ -21,13 +17,19 @@ export const HomeContainer = styled.main`
     }
   }
 
-  .wrapperRight {
+  .left {
     overflow: hidden;
+  }
+
+  nav {
+    font-size: 15vw;
+    width: 50%;
+    margin-top: 50px;
   }
 
   @media (min-width: 438px) {
     .top {
-      width: 439px;
+      align-items: flex-start;
       span {
         font-size: 6.1rem;
       }
@@ -37,10 +39,12 @@ export const HomeContainer = styled.main`
   @media (min-width: 1025px) {
     .wrapper {
       height: 80vh;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      max-width: 1000px;
+      max-width: 1200px;
+
+      ${displayFlex({
+        align: "center",
+        justify: "space-between",
+      })}
     }
 
     .top {
@@ -52,15 +56,16 @@ export const HomeContainer = styled.main`
     }
   }
 
-  /* TRANSITIONS */
-  a {
-    transition: margin 0.3s ease-in;
-  }
+  @media only screen {
+    a {
+      transition: margin 0.3s ease-in;
+    }
 
-  nav {
-    a:hover {
-      font-style: italic;
-      margin-left: 3px;
+    nav {
+      a:hover {
+        font-style: italic;
+        margin-left: 3px;
+      }
     }
   }
 `;

@@ -24,7 +24,7 @@ export default function About() {
           zIndex: 1,
         }}
         animate={{ y: "-100%", x: "100%" }}
-        transition={{ delay: 0.2, duration: 0.5, ease: "easeInOut" }}
+        transition={{ delay: 0.2, duration: 0.7, ease: "easeInOut" }}
       ></m.div>
 
       <AboutContainer>
@@ -55,19 +55,14 @@ export default function About() {
               transition={{ delay: 0.4, duration: 0.5 }}
             ></m.div>
           </div>
-          <m.div
-            className="blue"
-            // animate={{ opacity: 1 }}
-            // initial={{ opacity: 0 }}
-            // transition={{ delay: 0.5, duration: 0.5 }}
-          >
+          <div className="blue">
             <m.div
               className="portrait"
               animate={{ opacity: 1 }}
               initial={{ opacity: 0 }}
               transition={{ delay: 0.8, duration: 0.5 }}
             ></m.div>
-          </m.div>
+          </div>
         </section>
 
         <m.div

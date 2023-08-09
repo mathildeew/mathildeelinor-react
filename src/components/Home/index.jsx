@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom";
-import { HomeContainer } from "./HomeContainer.styles";
 import { motion as m } from "framer-motion";
+import { HomeContainer } from "./HomeContainer.styles";
 
 export default function Home() {
   return (
     <>
       <m.div
-        className="transitionBackground"
         initial={{
           background: "#39469B",
           width: "100vw",
@@ -19,7 +18,7 @@ export default function Home() {
 
       <HomeContainer>
         <div className="wrapper">
-          <div className="wrapperRight">
+          <div className="left">
             <m.div
               className="top"
               animate={{ y: 0 }}

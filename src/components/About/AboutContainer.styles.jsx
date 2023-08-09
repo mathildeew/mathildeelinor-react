@@ -67,6 +67,10 @@ export const AboutContainer = styled.main`
     font-weight: 600;
   }
 
+  .part {
+    overflow: hidden;
+  }
+
   @media (min-width: 768px) {
     .portrait {
       display: none;

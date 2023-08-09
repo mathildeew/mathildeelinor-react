@@ -1,4 +1,4 @@
-import { motion as m } from "framer-motion";
+import { color, motion as m } from "framer-motion";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { projects } from "../../js/projects";
@@ -21,16 +21,28 @@ export default function Portfolio() {
             width: "100vw",
             height: "100vh",
             position: "absolute",
+            zIndex: "1",
           }}
           animate={{ y: "-100%" }}
           transition={{ delay: 0.2, duration: 0.5, ease: "easeInOut" }}
         ></m.div>
 
         <div className="part">
-          <h1>Portfolio</h1>
+          <m.h1
+            animate={{ y: 0 }}
+            initial={{ y: "-10%" }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+          >
+            Portfolio
+          </m.h1>
         </div>
 
-        <div className="wrapper">
+        <m.div
+          className="wrapper"
+          animate={{ y: 0 }}
+          initial={{ y: "2%" }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+        >
           <section className="intro part">
             <p>
               This is a showcase of my best work from the Front-end development
@@ -56,7 +68,7 @@ export default function Portfolio() {
               </div>
             ))}
           </section>
-        </div>
+        </m.div>
       </PortfolioContainer>
     </>
   );

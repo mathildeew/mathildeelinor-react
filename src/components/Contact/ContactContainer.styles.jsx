@@ -27,6 +27,10 @@ export const ContactContainer = styled.main`
     font-size: 1.6rem;
   }
 
+  .part {
+    overflow: hidden;
+  }
+
   @media (min-width: 768px) {
     h1 {
       font-size: 215px;
