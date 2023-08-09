@@ -2,9 +2,8 @@ import styled from "styled-components";
 
 export const ContactContainer = styled.main`
   h1 {
-    font-size: 28vw;
-    position: relative;
-    left: -43px;
+    font-size: 5rem;
+    margin-bottom: 40px;
   }
 
   .links {

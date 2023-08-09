@@ -31,7 +31,7 @@ export const PortfolioContainer = styled.main`
 
   @media (min-width: 768px) {
     h1 {
-      font-size: 200px;
+      font-size: 15rem;
     }
 
     #projects {

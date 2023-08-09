@@ -82,5 +82,4 @@ li {
 .part {
     margin-bottom: 50px;
   }
-
 `;

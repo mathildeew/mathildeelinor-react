@@ -3,6 +3,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { motion as m } from "framer-motion";
 import { projects } from "../../js/projects";
 import { PortfolioContainer } from "./PortfolioContainer.styles";
+import Navbar from "../ui/Layout/Navbar/navContainer";
 
 export default function Portfolio() {
   return (
@@ -13,19 +14,20 @@ export default function Portfolio() {
         </Helmet>
       </HelmetProvider>
 
-      <PortfolioContainer>
-        <m.div
-          initial={{
-            background: "#39469B",
-            width: "100vw",
-            height: "100vh",
-            position: "absolute",
-            zIndex: "1",
-          }}
-          animate={{ y: "-100%" }}
-          transition={{ delay: 0.2, duration: 0.5, ease: "easeInOut" }}
-        ></m.div>
+      <m.div
+        initial={{
+          background: "#39469B",
+          width: "100vw",
+          height: "100vh",
+          position: "absolute",
+          zIndex: "1",
+        }}
+        animate={{ y: "-100%" }}
+        transition={{ delay: 0.2, duration: 0.5, ease: "easeInOut" }}
+      ></m.div>
 
+      <Navbar />
+      <PortfolioContainer>
         <m.h1
           animate={{ y: 0 }}
           initial={{ y: "-20px" }}
@@ -55,7 +57,7 @@ export default function Portfolio() {
 
           <div id="projects">
             {projects.map((project) => (
-              <div className="bulk">
+              <div className="bulk" key={project.id}>
                 <img src={project.image} />
                 <h2>{project.name}</h2>
                 <h3>{project.title}</h3>

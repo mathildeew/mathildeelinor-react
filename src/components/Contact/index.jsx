@@ -1,6 +1,7 @@
 import { motion as m } from "framer-motion";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import Navbar from "../ui/Layout/Navbar/navContainer";
 import { ContactContainer } from "./ContactContainer.styles";
 
 export default function Contact() {
@@ -23,6 +24,7 @@ export default function Contact() {
         transition={{ delay: 0.2, duration: 0.5, ease: "easeInOut" }}
       ></m.div>
 
+      <Navbar />
       <ContactContainer>
         <div className="wrapper">
           <div className="h1Wrap">

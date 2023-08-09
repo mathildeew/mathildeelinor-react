@@ -4,6 +4,7 @@ import { AboutContainer } from "./AboutContainer.styles";
 import { BaseButton } from "../../../styles/Button";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { motion as m } from "framer-motion";
+import Navbar from "../ui/Layout/Navbar/navContainer";
 
 export default function About() {
   return (
@@ -26,6 +27,7 @@ export default function About() {
         transition={{ delay: 0.2, duration: 0.5, ease: "easeInOut" }}
       ></m.div>
 
+      <Navbar />
       <AboutContainer>
         <section className="topWrapper">
           <div className="top">
