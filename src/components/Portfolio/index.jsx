@@ -62,6 +62,7 @@ export default function Portfolio() {
                 <h2>{project.name}</h2>
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
+                <p>{project.languages}</p>
                 <Link to={project.link}>Check out</Link>
                 <Link to={project.github}>GitHub</Link>
               </div>
