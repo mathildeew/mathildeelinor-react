@@ -8,7 +8,7 @@ export const PortfolioContainer = styled.main`
   }
 
   #intro p:first-child,
-  .bulk p:nth-child(4),
+  .bulk p,
   img {
     margin-bottom: 20px;
   }
@@ -16,7 +16,7 @@ export const PortfolioContainer = styled.main`
   #projects {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-row-gap: 40px;
+    grid-row-gap: 80px;
   }
 
   img {
@@ -26,6 +26,8 @@ export const PortfolioContainer = styled.main`
   a {
     font-family: Montserrat, sans-serif;
     font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: underline;
     margin-right: 20px;
   }
 
@@ -35,9 +37,19 @@ export const PortfolioContainer = styled.main`
     }
 
     #projects {
-      grid-template-columns: repeat(2, 1fr);
-      grid-column-gap: 30px;
-      grid-row-gap: 50px;
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 100px;
+    }
+  }
+
+  @media only screen {
+    a {
+      position: relative;
+
+      &:hover {
+        font-style: italic;
+        left: 2px;
+      }
     }
   }
 `;

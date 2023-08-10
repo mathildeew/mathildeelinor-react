@@ -14,7 +14,7 @@ export const projects = [
     title: "JavaScript Frameworks CA",
     description:
       "Made in the final semester. The goal was to apply knowledge of React to build an eCom store. The project covers the front-end application for an already existing API.",
-    languages: "Built with React",
+    languages: "Built with React.",
     image: "../../public/projects/sjaapp.png",
     github: "https://github.com/mathildeew/js-frameworks-ca",
     link: "https://sjaapp.netlify.app/",
