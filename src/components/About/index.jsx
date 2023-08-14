@@ -45,8 +45,8 @@ export default function About() {
                 initial={{ y: "100%" }}
                 transition={{ delay: 0.5, duration: 0.5 }}
               >
-                Hi, I am Mathilde Elinor. I like to create something something
-                and some more, a sentence with three lines.
+                Hi, I am Mathilde Elinor. I like to code things that are
+                structured, accurate and user-oriented.
               </m.span>
             </div>
 

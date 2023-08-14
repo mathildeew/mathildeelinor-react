@@ -33,7 +33,7 @@ export const AboutContainer = styled.main`
     background-color: var(--color-primary);
     width: 100%;
     height: 300px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     ${displayFlex({
       direction: "column",

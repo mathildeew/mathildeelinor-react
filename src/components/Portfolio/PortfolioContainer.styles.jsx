@@ -21,6 +21,7 @@ export const PortfolioContainer = styled.main`
 
   img {
     width: 100%;
+    height: auto;
   }
 
   a {

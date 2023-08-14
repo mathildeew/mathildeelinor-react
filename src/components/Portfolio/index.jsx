@@ -51,14 +51,16 @@ export default function Portfolio() {
               Even though my primary focus lies in crafting create
               well-structured, readable and maintainable code, I have also
               developed a deep appreciation for the creative aspects of the
-              design process.
+              design process. The joy in creating something – from an idea to a
+              physical product – is what really excites me the most of being a
+              front-end developer.
             </p>
           </div>
 
           <div id="projects">
             {projects.map((project) => (
               <div className="bulk" key={project.id}>
-                <img src={project.image} />
+                <img src={project.image} alt={project.name} />
                 <h2>{project.name}</h2>
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
