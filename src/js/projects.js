@@ -1,11 +1,12 @@
 export const projects = [
   {
     id: 5,
-    name: "Stay tuned!",
+    name: "Holidaze",
     title: "Project Exam 2",
-    description: "The final exam at Noroff.",
+    description:
+      "The final exam at Noroff. Delivery is late in October, so please have a look at the repository & my Notion Workspace to follow along.",
     image: "../../public/projects/comingsoon.png",
-    github: "https://github.com/mathildeew",
+    github: "https://github.com/mathildeew/project-exam2-holidaze",
     link: "",
   },
   {
