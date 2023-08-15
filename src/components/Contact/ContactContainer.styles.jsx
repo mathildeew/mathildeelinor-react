@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { displayFlex } from "../../../styles/mixins";
 
 export const ContactContainer = styled.main`
   h1 {
@@ -7,10 +8,13 @@ export const ContactContainer = styled.main`
   }
 
   .links {
-    display: flex;
-    justify-content: space-between;
     width: 130px;
-    align-items: center;
+    margin-top: 20px;
+
+    ${displayFlex({
+      align: "center",
+      justify: "space-between",
+    })}
 
     p {
       margin: 0 5px;
@@ -26,14 +30,22 @@ export const ContactContainer = styled.main`
     font-size: 1.6rem;
   }
 
-  .part {
-    overflow: hidden;
-  }
-
   @media (min-width: 768px) {
     h1 {
       font-size: 215px;
       text-align: center;
+    }
+  }
+
+  @media only screen {
+    a {
+      position: relative;
+
+      &:hover {
+        font-style: italic;
+        left: 2px;
+        text-decoration: underline;
+      }
     }
   }
 `;
