@@ -48,12 +48,11 @@ export default function Portfolio() {
               course at Noroff.
             </p>
             <p>
-              Even though my primary focus lies in crafting create
-              well-structured, readable and maintainable code, I have also
-              developed a deep appreciation for the creative aspects of the
-              design process. The joy in creating something – from an idea to a
-              physical product – is what really excites me the most of being a
-              front-end developer.
+              Even though my primary focus lies in crafting well-structured,
+              readable and maintainable code, I have also developed a deep
+              appreciation for the creative aspects of the design process. The
+              joy in creating something – from an idea to a physical product –
+              is what really excites me the most of being a front-end developer.
             </p>
           </div>
 
