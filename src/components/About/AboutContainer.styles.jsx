@@ -23,6 +23,10 @@ export const AboutContainer = styled.main`
     margin-bottom: 40px;
   }
 
+  h3 {
+    margin-bottom: 5px;
+  }
+
   span {
     font-family: Montserrat;
     font-size: 1.6rem;

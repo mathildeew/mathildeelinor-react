@@ -1,22 +1,28 @@
 export const experience = [
   {
-    id: 5,
+    id: 6,
     title: "Optometrist",
     company: "Ses Optikk",
     year: "2010 - Present",
   },
   {
-    id: 4,
+    id: 5,
     title: "Optometrist",
     company: "Liens Optiske",
     year: "2019 - 2020",
+  },
+  {
+    id: 4,
+    title: "Optometrist",
+    company: "Ses Optikk",
+    year: "2018 - 2019",
   },
   ,
   {
     id: 3,
     title: "Sales Associate",
     company: "Ses Optikk",
-    year: "2016 - 2020",
+    year: "2016 - 2018",
   },
   {
     id: 2,

@@ -100,9 +100,18 @@ export default function About() {
 
           <section className="part">
             <h2>Skills</h2>
-            <p>HTML, CSS/SASS, JavaScript, React</p>
-            <p>Git, Bootstrap, Wordpress, GitHub</p>
-            <p>Adobe XD, Figma, Photoshop, Illustrator</p>
+
+            <div className="bulk">
+              <h3>Front-end</h3>
+              <p>HTML, CSS/SASS, JavaScript, React</p>
+              <p>Git, Bootstrap, Wordpress, GitHub</p>
+              <p>Cypress, Jest</p>
+            </div>
+
+            <div className="bulk">
+              <h3>Design</h3>
+              <p>Adobe XD, Figma, Photoshop, Illustrator</p>
+            </div>
           </section>
 
           <section className="part">
