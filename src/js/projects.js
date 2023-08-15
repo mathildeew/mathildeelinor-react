@@ -47,7 +47,7 @@ export const projects = [
     name: "Community Sciene Museum",
     title: "Semester Project 1",
     description:
-      "The website for Community Science Museum, a fictional museum. The brief was to make a informative and engaging website, that should be responsive and easy to use on a variety of devices. Built with HTML & CSS.",
+      "The website for Community Science Museum, a fictional museum. The brief was to make a informative and engaging website, that should be responsive and easy to use on a variety of devices.",
     languages: "Built with HTML & CSS.",
     image: "../../public/projects/csm.jpg",
     github:
