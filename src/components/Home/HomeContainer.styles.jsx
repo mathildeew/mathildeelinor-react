@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { displayFlex } from "../../../styles/mixins";
 
 export const HomeContainer = styled.section`
-  .intro {
-    height: 80vh;
+  height: 80vh;
 
+  .intro {
     ${displayFlex({
       direction: "column",
       justify: "center",
