@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { displayFlex } from "../../../styles/mixins";
 
-export const HomeContainer = styled.main`
+export const HomeContainer = styled.section`
   .top {
     height: 100%;
     margin-bottom: 40px;
@@ -11,7 +11,7 @@ export const HomeContainer = styled.main`
       align: "end",
     })}
 
-    span {
+    h1 {
       font-size: 14vw;
       font-weight: 500;
     }

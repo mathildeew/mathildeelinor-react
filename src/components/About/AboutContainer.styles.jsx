@@ -1,38 +1,7 @@
 import styled from "styled-components";
 import { displayFlex } from "../../../styles/mixins";
 
-export const AboutContainer = styled.main`
-  .top {
-    width: 100%;
-    height: 400px;
-  }
-
-  .left {
-    margin: 0 32px;
-    overflow: hidden;
-
-    ${displayFlex({
-      direction: "column",
-      align: "center",
-      justify: "center",
-    })}
-  }
-
-  h1 {
-    font-size: 10rem;
-    margin-bottom: 40px;
-  }
-
-  h3 {
-    margin-bottom: 5px;
-  }
-
-  span {
-    font-family: Montserrat;
-    font-size: 1.6rem;
-    line-height: 2;
-  }
-
+export const AboutContainer = styled.section`
   #blue {
     background-color: var(--color-primary);
     width: 100%;
@@ -89,31 +58,6 @@ export const AboutContainer = styled.main`
     #blue {
       width: 50%;
       height: auto;
-    }
-
-    .topWrapper {
-      width: 100%;
-      height: 55vw;
-      max-height: 550px;
-      display: flex;
-      margin-bottom: 50px;
-    }
-
-    .top {
-      width: 50%;
-      height: 100%;
-      margin-right: 45px;
-
-      ${displayFlex({
-        align: "center",
-        justify: "flex-end",
-      })}
-    }
-
-    .left {
-      width: 320px;
-      flex-direction: column;
-      margin: 0;
     }
 
     .portraitBig {
