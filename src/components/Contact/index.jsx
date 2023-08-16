@@ -46,11 +46,7 @@ export default function Contact() {
               hei@mathildeelinor.no
             </Link>
             <div className="links">
-              <Link to="https://www.linkedin.com/in/mathilde-elinor-wiik-88075b249/">
-                LinkedIn
-              </Link>
               <p>/</p>
-              <Link to="https://github.com/mathildeew">GitHub</Link>
             </div>
           </m.div>
         </div>

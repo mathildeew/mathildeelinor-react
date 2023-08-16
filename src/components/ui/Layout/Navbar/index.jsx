@@ -5,6 +5,7 @@ import { motion as m } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsis } from "@fortawesome/free-solid-svg-icons";
 import { NavbarContainer } from "./Navbar.styles";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -33,7 +34,7 @@ export default function Navbar() {
                   onClick={() => setShowMenu(!showMenu)}
                 />
                 <div className={showMenu ? "menu active" : "menu inactive"}>
-                  <ul>
+                  <ul className="navMenu">
                     <li>
                       <Link to="/">Home</Link>
                     </li>
@@ -41,12 +42,28 @@ export default function Navbar() {
                       <Link to="/portfolio">Portfolio</Link>
                     </li>
                     <li>
-                      <Link to="/about">About</Link>
-                    </li>
-                    <li>
-                      <Link to="/contact">Contact</Link>
+                      <Link to="../../../public/cv0.pdf" target="_blank">
+                        My CV
+                      </Link>
                     </li>
                   </ul>
+                  <div className="basicContact">
+                    <span>Say hello</span>
+                    <Link
+                      to="mailto: hei@mathildeelinor.no"
+                      className="contactEmail"
+                    >
+                      hei@mathildeelinor.no
+                    </Link>
+                    <div className="socialIcons">
+                      <Link to="https://github.com/mathildeew">
+                        {/* <FontAwesomeIcon icon={faGithub} /> */} GH
+                      </Link>
+                      <Link to="https://www.linkedin.com/in/mathilde-elinor-wiik-88075b249/">
+                        {/* <FontAwesomeIcon icon={faLinkedin} /> */} LI
+                      </Link>
+                    </div>
+                  </div>
                 </div>
               </>
             )}
@@ -62,6 +79,11 @@ export default function Navbar() {
                   </li>
                   <li>
                     <Link to="/about">About</Link>
+                  </li>
+                  <li>
+                    <Link to="../../../public/cv0.pdf" target="_blank">
+                      My CV
+                    </Link>
                   </li>
                   <li>
                     <Link to="/contact">Contact</Link>

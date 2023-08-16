@@ -4,6 +4,7 @@ import { displayFlex } from "../../../../../styles/mixins";
 export const NavbarContainer = styled.header`
   width: 100%;
   margin-bottom: 30px;
+  overflow: hidden;
 
   .ellipsis {
     font-size: 3rem;
@@ -37,27 +38,61 @@ export const NavbarContainer = styled.header`
       top: 0px;
     }
 
-    ul {
-      margin-top: 70px;
-      margin-right: 25px;
-
-      ${displayFlex({
-        direction: "column",
-        align: "flex-end",
-      })}
+    a {
+      color: var(--color-secondary);
     }
+  }
+
+  .navMenu {
+    margin-top: 70px;
+    margin-right: 25px;
+
+    ${displayFlex({
+      direction: "column",
+      align: "flex-end",
+    })}
 
     li {
       margin-bottom: 20px;
     }
 
     a {
-      color: var(--color-secondary);
       font-family: Fromage, sans-serif;
-      font-size: 4rem;
+      font-size: 3rem;
       padding: 10px;
     }
   }
+
+  .basicContact {
+    height: 150px;
+    margin-top: 30px;
+    margin-right: 25px;
+
+    ${displayFlex({
+      direction: "column",
+      align: "flex-end",
+      justify: "space-around",
+    })}
+
+    span {
+      color: var(--color-secondary);
+      font-family: Montserrat, sans-serif;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+
+    a {
+      font-family: Montserrat, sans-serif;
+      font-size: 1.6rem;
+    }
+  }
+
+  /* .socialIcons {
+    svg {
+      color: var(--color-secondary);
+      font-size: 3rem;
+    }
+  } */
 
   @media (min-width: 768px) {
     height: 50px;
@@ -77,12 +112,12 @@ export const NavbarContainer = styled.header`
 
     ul {
       display: flex;
-    }
 
-    a {
-      font-size: 2rem;
-      padding: 5px;
-      margin-right: 25px;
+      a {
+        font-size: 2rem;
+        padding: 5px;
+        margin-right: 25px;
+      }
     }
   }
 
