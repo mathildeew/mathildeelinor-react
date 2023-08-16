@@ -2,70 +2,24 @@ import styled from "styled-components";
 import { displayFlex } from "../../../styles/mixins";
 
 export const HomeContainer = styled.section`
-  .top {
-    height: 100%;
-    margin-bottom: 40px;
+  .intro {
+    height: 80vh;
 
     ${displayFlex({
       direction: "column",
-      align: "end",
+      justify: "center",
     })}
-
-    h1 {
-      font-size: 14vw;
-      font-weight: 500;
-    }
   }
 
-  .left {
-    overflow: hidden;
-  }
-
-  nav {
+  h1 {
     font-size: 15vw;
-    width: 50%;
-    margin-top: 50px;
+    font-weight: 500;
+    margin-bottom: 40px;
   }
 
-  @media (min-width: 438px) {
-    .top {
-      align-items: flex-start;
-      span {
-        font-size: 6.1rem;
-      }
-    }
-  }
-
-  @media (min-width: 1025px) {
-    .wrapper {
-      height: 80vh;
-      max-width: 1200px;
-
-      ${displayFlex({
-        align: "center",
-        justify: "space-between",
-      })}
-    }
-
-    .top {
-      align-items: start;
-    }
-
-    nav {
-      font-size: 11rem;
-    }
-  }
-
-  @media only screen {
-    a {
-      transition: margin 0.3s ease-in;
-    }
-
-    nav {
-      a:hover {
-        font-style: italic;
-        margin-left: 3px;
-      }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 11.5rem;
     }
   }
 `;
