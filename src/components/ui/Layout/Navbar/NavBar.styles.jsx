@@ -2,9 +2,10 @@ import styled from "styled-components";
 import { displayFlex } from "../../../../../styles/mixins";
 
 export const NavbarContainer = styled.header`
-  width: 100%;
+  width: 50%;
   margin-bottom: 30px;
   overflow: hidden;
+  border: 2px solid green;
 
   .ellipsis {
     font-size: 3rem;
@@ -95,30 +96,13 @@ export const NavbarContainer = styled.header`
   } */
 
   @media (min-width: 768px) {
-    height: 50px;
-    ${displayFlex({
-      justify: "center",
-      align: "center",
-    })}
-
-    nav {
-      width: 700px;
-
-      ${displayFlex({
-        justify: "end",
-        align: "flex-end",
-      })};
+    .menu {
+      width: 350px;
+      right: 0px;
     }
+  }
 
-    ul {
-      display: flex;
-
-      a {
-        font-size: 2rem;
-        padding: 5px;
-        margin-right: 25px;
-      }
-    }
+  @media (min-width: 1100px) {
   }
 
   @media only screen {
