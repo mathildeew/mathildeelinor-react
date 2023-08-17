@@ -8,11 +8,9 @@ export const HeaderContainer = styled.header`
 
   height: 50px;
   width: 98%;
-  max-width: 750px;
+  max-width: 900px;
   height: 100%;
   margin: 0 auto;
-
-  border: 2px solid red;
 
   .ellipsis {
     font-size: 3rem;
@@ -107,12 +105,25 @@ export const HeaderContainer = styled.header`
     }
   }
 
-  @media (min-width: 768px) {
-    .menu {
-      width: 300px;
+  @media (min-width: 750px) {
+    nav {
+      position: relative;
+    }
 
-      &.active {
-      }
+    .menu {
+      width: 280px;
+      height: 600px;
+      left: unset;
+    }
+  }
+
+  @media (min-width: 1050px) {
+    nav {
+      position: relative;
+    }
+
+    .menu {
+      left: 5px;
     }
   }
 `;

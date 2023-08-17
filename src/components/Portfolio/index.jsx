@@ -13,18 +13,6 @@ export default function Portfolio() {
         </Helmet>
       </HelmetProvider>
 
-      <m.div
-        initial={{
-          background: "#39469B",
-          width: "100vw",
-          height: "100vh",
-          position: "absolute",
-          zIndex: "1",
-        }}
-        animate={{ y: "-100%" }}
-        transition={{ delay: 0.2, duration: 0.5, ease: "easeInOut" }}
-      ></m.div>
-
       <PortfolioContainer>
         <m.h1
           animate={{ y: 0 }}
