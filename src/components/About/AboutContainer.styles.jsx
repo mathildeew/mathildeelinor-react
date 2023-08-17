@@ -1,26 +1,21 @@
 import styled from "styled-components";
 import { displayFlex } from "../../../styles/mixins";
 
-export const AboutContainer = styled.main`
-  .top {
+export const AboutContainer = styled.section`
+  .topMain {
     width: 100%;
-    height: 400px;
-  }
-
-  .left {
-    margin: 0 32px;
-    overflow: hidden;
+    margin-bottom: 70px;
 
     ${displayFlex({
       direction: "column",
-      align: "center",
-      justify: "center",
+      justify: "space-around",
     })}
   }
 
   h1 {
-    font-size: 10rem;
-    margin-bottom: 40px;
+    font-size: 8rem;
+    text-align: center;
+    margin-bottom: 100px;
   }
 
   h3 {
@@ -31,30 +26,47 @@ export const AboutContainer = styled.main`
     font-family: Montserrat;
     font-size: 1.6rem;
     line-height: 2;
+    margin-bottom: 80px;
   }
 
-  #blue {
+  .blob {
+    width: 270px;
+    height: 350px;
     background-color: var(--color-primary);
-    width: 100%;
-    height: 300px;
-    margin-bottom: 30px;
+    border-radius: 40% 56% 72% 28% / 42% 42% 56% 48%;
+    margin: 0 auto;
+    animation: morph 2.75s linear infinite;
 
     ${displayFlex({
       direction: "column",
-      align: "center",
       justify: "center",
+      align: "center",
     })}
   }
 
+  @keyframes morph {
+    0%,
+    100% {
+      border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+    }
+    33% {
+      border-radius: 72% 28% 48% 48% / 28% 28% 72% 72%;
+    }
+    66% {
+      border-radius: 100% 56% 56% 100% / 100% 100% 56% 56%;
+    }
+  }
+
   .portrait {
-    width: 180px;
-    height: 220px;
+    width: 200px;
+    height: 260px;
     background: url("../../../public/self2.jpg");
     background-size: cover;
-    background-position: top center;
-    border-top-right-radius: 50%;
-    border-top-left-radius: 50%;
-    box-shadow: 6px -6px 0px 0px var(--color-secondary);
+    background-position: center center;
+    border-radius: 40% 56% 72% 28% / 42% 42% 56% 48%;
+    /* border-top-right-radius: 50%;
+    border-top-left-radius: 50%; */
+    /* box-shadow: 6px -6px 0px 0px var(--color-secondary); */
   }
 
   #text p:first-child {
@@ -62,7 +74,7 @@ export const AboutContainer = styled.main`
   }
 
   .bulk {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 
     div:first-child {
       display: flex;
@@ -82,52 +94,20 @@ export const AboutContainer = styled.main`
   }
 
   @media (min-width: 768px) {
-    .portrait {
-      display: none;
-    }
-
-    #blue {
-      width: 50%;
-      height: auto;
-    }
-
-    .topWrapper {
-      width: 100%;
-      height: 55vw;
-      max-height: 550px;
-      display: flex;
-      margin-bottom: 50px;
-    }
-
-    .top {
-      width: 50%;
-      height: 100%;
-      margin-right: 45px;
-
+    .topMain {
       ${displayFlex({
+        direction: "row",
         align: "center",
-        justify: "flex-end",
       })}
     }
 
-    .left {
-      width: 320px;
-      flex-direction: column;
-      margin: 0;
+    span {
+      font-size: 2rem;
+      width: 50%;
+      margin-bottom: 0px;
     }
-
-    .portraitBig {
-      /* 180*220 */
-      width: 180px;
-      height: 220px;
-      background: url("../../../public/self2.jpg");
-      background-size: cover;
-      background-position: top center;
-      border-top-right-radius: 50%;
-      border-top-left-radius: 50%;
-      box-shadow: 6px -6px 0px 0px var(--color-secondary);
-      position: absolute;
-      left: 50%;
+    .blue {
+      /* width: 80%; */
     }
   }
 `;

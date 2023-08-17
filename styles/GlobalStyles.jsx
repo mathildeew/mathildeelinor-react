@@ -74,9 +74,9 @@ li {
 }
 
 .wrapper {
-    max-width: 700px;
-    padding: 0 8%;
-    margin: 50px auto;
+  max-width: 700px;
+  padding: 0 8%;
+  margin: 50px auto;
   }
 
 .part {

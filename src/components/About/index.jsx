@@ -15,60 +15,39 @@ export default function About() {
         </Helmet>
       </HelmetProvider>
 
-      <m.div
-        initial={{
-          background: "#39469B",
-          width: "100vw",
-          height: "100vh",
-          position: "absolute",
-          zIndex: "1",
-        }}
-        animate={{ y: "-100%" }}
-        transition={{ delay: 0.2, duration: 0.5, ease: "easeInOut" }}
-      ></m.div>
-
       <Navbar />
-      <AboutContainer>
-        <section className="topWrapper">
-          <div className="top">
-            <div className="left">
-              <m.h1
-                animate={{ y: 0 }}
-                initial={{ y: "-100%" }}
-                transition={{ delay: 0.5, duration: 0.5 }}
-              >
-                About
-              </m.h1>
+      <AboutContainer className="wrapper">
+        <div className="top">
+          <m.h1
+            animate={{ y: 0 }}
+            initial={{ y: "-100%" }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+          >
+            About
+          </m.h1>
 
-              <m.span
-                animate={{ y: 0 }}
-                initial={{ y: "100%" }}
-                transition={{ delay: 0.5, duration: 0.5 }}
-              >
-                Hi, I am Mathilde Elinor. I like to code things that are
-                structured, accurate and user-oriented.
-              </m.span>
-            </div>
+          <div className="topMain">
+            <m.span
+              animate={{ y: 0 }}
+              initial={{ y: "100%" }}
+              transition={{ delay: 0.5, duration: 0.5 }}
+            >
+              Hi, I am Mathilde Elinor. I like to code things that are
+              structured, accurate and user-oriented.
+            </m.span>
 
             <m.div
-              className="portraitBig"
-              animate={{ opacity: 1 }}
-              initial={{ opacity: 0 }}
-              transition={{ delay: 0.4, duration: 0.5 }}
-            ></m.div>
-          </div>
-          <m.div id="blue">
-            <m.div
-              className="portrait"
+              className="blob"
               animate={{ opacity: 1 }}
               initial={{ opacity: 0 }}
               transition={{ delay: 0.8, duration: 0.5 }}
-            ></m.div>
-          </m.div>
-        </section>
+            >
+              <div className="portrait"></div>
+            </m.div>
+          </div>
+        </div>
 
         <m.div
-          className="wrapper"
           animate={{ y: 0, opacity: 1 }}
           initial={{ y: "10%", opacity: 0 }}
           transition={{ delay: 0.5, duration: 0.5 }}
@@ -99,47 +78,31 @@ export default function About() {
           </BaseButton>
 
           <section className="part">
-            <h2>Skills</h2>
-
             <div className="bulk">
-              <h3>Front-end</h3>
-              <p>HTML, CSS/SASS, JavaScript, React</p>
-              <p>Git, Bootstrap, Wordpress, GitHub</p>
-              <p>Cypress, Jest</p>
+              <h2>Skills</h2>
+              <p>
+                Web accessibility, SE Optimization, FE Optimization, responsive
+                web design, testing.
+              </p>
             </div>
 
             <div className="bulk">
-              <h3>Design</h3>
-              <p>Adobe XD, Figma, Photoshop, Illustrator</p>
+              <h3>Languages</h3>
+              <p>JavaScript, CSS, Sass, HTML, Git</p>
             </div>
-          </section>
 
-          <section className="part">
-            <h2>Experience</h2>
+            <div className="bulk">
+              <h3>Frameworks & libraries</h3>
+              <p>React, Bootstrap, Jest</p>
+            </div>
 
-            {experience.map((job) => (
-              <div className="bulk" key={job.id}>
-                <div>
-                  <p className="boldText">{job.title}</p>
-                  <p>/ {job.company}</p>
-                </div>
-                <p>{job.year}</p>
-              </div>
-            ))}
-          </section>
-
-          <section className="part">
-            <h2>Education</h2>
-
-            {education.map((course) => (
-              <div className="bulk" key={course.id}>
-                <div>
-                  <p className="boldText">{course.title}</p>
-                  <p>/ {course.school}</p>
-                </div>
-                <p>{course.year}</p>
-              </div>
-            ))}
+            <div className="bulk">
+              <h3>Tools & platforms</h3>
+              <p>
+                GitHub, WordPress, Cypress, Netlify, Adobe XD, Figma, Photoshop,
+                Illustrator
+              </p>
+            </div>
           </section>
         </m.div>
       </AboutContainer>

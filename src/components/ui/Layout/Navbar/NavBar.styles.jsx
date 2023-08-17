@@ -5,7 +5,6 @@ export const NavbarContainer = styled.header`
   width: 50%;
   margin-bottom: 30px;
   overflow: hidden;
-  border: 2px solid green;
 
   .ellipsis {
     font-size: 3rem;
