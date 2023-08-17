@@ -4,14 +4,14 @@ import Media from "react-media";
 import { motion as m } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsis } from "@fortawesome/free-solid-svg-icons";
-import { NavbarContainer } from "./Navbar.styles";
+import { HeaderContainer } from "./Header.styles";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-export default function Navbar() {
+export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <NavbarContainer>
+    <HeaderContainer>
       <m.nav
         initial={{
           opacity: 0,
@@ -19,14 +19,14 @@ export default function Navbar() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.8, duration: 0.5, ease: "easeInOut" }}
       >
-        <>
-          <FontAwesomeIcon
-            className={showMenu ? "ellipsis active" : "ellipsis inactive"}
-            icon={faEllipsis}
-            onClick={() => setShowMenu(!showMenu)}
-          />
-          <div className={showMenu ? "menu active" : "menu inactive"}>
-            <ul className="navMenu">
+        <FontAwesomeIcon
+          className={showMenu ? "ellipsis active" : "ellipsis inactive"}
+          icon={faEllipsis}
+          onClick={() => setShowMenu(!showMenu)}
+        />
+        <div className={showMenu ? "menu active" : "menu inactive"}>
+          <div className="menuContainer">
+            <ul>
               <li>
                 <Link to="/">Home</Link>
               </li>
@@ -42,23 +42,22 @@ export default function Navbar() {
                 </Link>
               </li>
             </ul>
+
             <div className="basicContact">
               <span>Say hello</span>
               <Link to="mailto: hei@mathildeelinor.no" className="contactEmail">
                 hei@mathildeelinor.no
               </Link>
               <div className="socialIcons">
-                <Link to="https://github.com/mathildeew">
-                  {/* <FontAwesomeIcon icon={faGithub} /> */} GH
-                </Link>
+                <Link to="https://github.com/mathildeew">GH</Link>
                 <Link to="https://www.linkedin.com/in/mathilde-elinor-wiik-88075b249/">
-                  {/* <FontAwesomeIcon icon={faLinkedin} /> */} LI
+                  LI
                 </Link>
               </div>
             </div>
           </div>
-        </>
+        </div>
       </m.nav>
-    </NavbarContainer>
+    </HeaderContainer>
   );
 }

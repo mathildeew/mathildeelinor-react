@@ -4,7 +4,6 @@ import { AboutContainer } from "./AboutContainer.styles";
 import { BaseButton } from "../../../styles/Button";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { motion as m } from "framer-motion";
-import Navbar from "../ui/Layout/Navbar";
 
 export default function About() {
   return (
@@ -15,7 +14,6 @@ export default function About() {
         </Helmet>
       </HelmetProvider>
 
-      <Navbar />
       <AboutContainer className="wrapper">
         <div className="top">
           <m.h1

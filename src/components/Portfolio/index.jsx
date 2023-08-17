@@ -3,7 +3,6 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { motion as m } from "framer-motion";
 import { projects } from "../../js/projects";
 import { PortfolioContainer } from "./PortfolioContainer.styles";
-import Navbar from "../ui/Layout/Navbar";
 
 export default function Portfolio() {
   return (
@@ -26,7 +25,6 @@ export default function Portfolio() {
         transition={{ delay: 0.2, duration: 0.5, ease: "easeInOut" }}
       ></m.div>
 
-      <Navbar />
       <PortfolioContainer>
         <m.h1
           animate={{ y: 0 }}

@@ -1,17 +1,23 @@
 import styled from "styled-components";
 import { displayFlex } from "../../../../../styles/mixins";
 
-export const NavbarContainer = styled.header`
-  width: 50%;
-  margin-bottom: 30px;
-  overflow: hidden;
+export const HeaderContainer = styled.header`
+  ${displayFlex({
+    justify: "end",
+  })}
+
+  height: 50px;
+  width: 98%;
+  max-width: 750px;
+  height: 100%;
+  margin: 0 auto;
+
+  border: 2px solid red;
 
   .ellipsis {
     font-size: 3rem;
     padding: 5px;
-    position: absolute;
-    top: 5px;
-    right: 20px;
+    position: relative;
     z-index: 2;
     transition: all 0.4s ease-in-out;
 
@@ -22,20 +28,29 @@ export const NavbarContainer = styled.header`
   }
 
   .menu {
+    ${displayFlex({
+      direction: "column",
+      align: "flex-end",
+    })}
+
+    background: var(--color-primary);
     width: 100%;
     height: 100vh;
-    background-color: var(--color-primary);
     position: absolute;
+    top: -100vh;
+    right: 0px;
     z-index: 1;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease;
 
     &.inactive {
+      opacity: 0;
       visibility: hidden;
-      top: -100%;
     }
+
     &.active {
-      visibility: visible;
       top: 0px;
+      opacity: 1;
+      visibility: visible;
     }
 
     a {
@@ -43,14 +58,18 @@ export const NavbarContainer = styled.header`
     }
   }
 
-  .navMenu {
-    margin-top: 70px;
-    margin-right: 25px;
-
+  .menuContainer {
     ${displayFlex({
       direction: "column",
-      align: "flex-end",
     })}
+
+    width: 100%;
+    margin-right: 20px;
+  }
+
+  ul {
+    text-align: end;
+    margin-top: 70px;
 
     li {
       margin-bottom: 20px;
@@ -64,54 +83,35 @@ export const NavbarContainer = styled.header`
   }
 
   .basicContact {
-    height: 150px;
-    margin-top: 30px;
-    margin-right: 25px;
-
     ${displayFlex({
       direction: "column",
-      align: "flex-end",
-      justify: "space-around",
     })}
+
+    text-align: end;
+    margin-top: 30px;
+
+    span,
+    a {
+      font-family: Montserrat, sans-serif;
+      padding: 10px;
+    }
 
     span {
       color: var(--color-secondary);
-      font-family: Montserrat, sans-serif;
       font-size: 2rem;
       text-transform: uppercase;
     }
 
     a {
-      font-family: Montserrat, sans-serif;
       font-size: 1.6rem;
     }
   }
 
-  /* .socialIcons {
-    svg {
-      color: var(--color-secondary);
-      font-size: 3rem;
-    }
-  } */
-
   @media (min-width: 768px) {
     .menu {
-      width: 350px;
-      right: 0px;
-    }
-  }
+      width: 300px;
 
-  @media (min-width: 1100px) {
-  }
-
-  @media only screen {
-    a {
-      position: relative;
-      transition: left 0.3s ease-in-out;
-
-      &:hover {
-        font-style: italic;
-        left: 4px;
+      &.active {
       }
     }
   }

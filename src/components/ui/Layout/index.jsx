@@ -1,7 +1,7 @@
 import { motion as m } from "framer-motion";
 import { Outlet } from "react-router-dom";
 import Footer from "./Footer";
-import Navbar from "./Navbar";
+import Header from "./Header";
 
 export default function Layout() {
   return (
@@ -16,7 +16,7 @@ export default function Layout() {
         animate={{ y: "-100%" }}
         transition={{ delay: 0.2, duration: 0.5, ease: "easeInOut" }}
       ></m.div>
-      <Navbar />
+      <Header />
       <main>
         <Outlet />
         <Footer />
