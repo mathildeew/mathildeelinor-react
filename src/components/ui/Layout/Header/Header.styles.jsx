@@ -130,4 +130,19 @@ export const HeaderContainer = styled.header`
       left: -20px;
     }
   }
+
+  @media only screen {
+    ul a,
+    .contactEmail {
+      &:hover {
+        font-style: italic;
+        position: relative;
+        left: 3px;
+      }
+    }
+
+    .contactEmail:hover {
+      text-decoration: underline;
+    }
+  }
 `;
