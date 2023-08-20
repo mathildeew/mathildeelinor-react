@@ -62,14 +62,16 @@ export const Button = styled.div`
     }
   }
 
-  &:hover {
-    a {
-      color: var(--color-secondary);
-    }
+  @media only screen {
+    &:hover {
+      a {
+        color: var(--color-secondary);
+      }
 
-    span {
-      border: none;
-      background: var(--color-primary);
+      span {
+        border: none;
+        background: var(--color-primary);
+      }
     }
   }
 `;
