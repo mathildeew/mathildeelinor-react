@@ -1,11 +1,11 @@
 import { useState } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion as m } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsis } from "@fortawesome/free-solid-svg-icons";
-import { HeaderContainer } from "./Header.styles";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { useEffect } from "react";
+import { HeaderContainer } from "./Header.styles";
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);

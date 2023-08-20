@@ -27,6 +27,12 @@ export const HeaderContainer = styled.header`
     }
   }
 
+  a,
+  span {
+    color: var(--color-secondary);
+    padding: 10px;
+  }
+
   .menu {
     ${displayFlex({
       direction: "column",
@@ -37,12 +43,12 @@ export const HeaderContainer = styled.header`
     width: 100%;
     height: 100vh;
     position: absolute;
-    top: -100vh;
     right: 0px;
     z-index: 1;
     transition: all 0.4s ease;
 
     &.inactive {
+      top: -100vh;
       opacity: 0;
       visibility: hidden;
     }
@@ -52,10 +58,6 @@ export const HeaderContainer = styled.header`
       opacity: 1;
       visibility: visible;
     }
-
-    a {
-      color: var(--color-secondary);
-    }
   }
 
   .menuContainer {
@@ -64,12 +66,11 @@ export const HeaderContainer = styled.header`
     })}
 
     width: 100%;
-    margin-right: 20px;
+    margin: 70px 20px 30px 0;
   }
 
   ul {
     text-align: end;
-    margin-top: 70px;
 
     li {
       margin-bottom: 20px;
@@ -78,7 +79,6 @@ export const HeaderContainer = styled.header`
     a {
       font-family: Fromage, sans-serif;
       font-size: 3rem;
-      padding: 10px;
     }
   }
 
@@ -88,16 +88,13 @@ export const HeaderContainer = styled.header`
     })}
 
     text-align: end;
-    margin-top: 30px;
 
     span,
     a {
       font-family: Montserrat, sans-serif;
-      padding: 10px;
     }
 
     span {
-      color: var(--color-secondary);
       font-size: 2rem;
       text-transform: uppercase;
     }
@@ -107,7 +104,7 @@ export const HeaderContainer = styled.header`
       margin-bottom: 10px;
     }
 
-    svg {
+    .contactIcon {
       font-size: 2.5rem;
     }
   }
