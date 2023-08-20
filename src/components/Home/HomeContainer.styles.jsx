@@ -68,7 +68,7 @@ export const HomeContainer = styled.section`
   .portrait {
     width: 200px;
     height: 260px;
-    background: url("../../../public/self2.jpg");
+    background: url("../../../public/self1.jpg");
     background-size: cover;
     background-position: center center;
     border-radius: 40% 56% 72% 28% / 42% 42% 56% 48%;
