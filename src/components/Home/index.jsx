@@ -99,7 +99,7 @@ export default function Home() {
         </section>
 
         <Button>
-          <Link to="../../../public/cv0.pdf" target="_blank">
+          <Link to="../../../public/CV_MathildeElinor_en.pdf" target="_blank">
             My CV
           </Link>
           <span></span>

@@ -48,7 +48,7 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  to="../../../public/cv0.pdf"
+                  to="../../../../../public/CV_MathildeElinor_en.pdf"
                   target="_blank"
                   onClick={() => setShowMenu(false)}
                 >
