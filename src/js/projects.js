@@ -37,7 +37,7 @@ export const projects = [
     title: "Project Exam 1",
     description:
       "This project is assigned to a fictional ceramic studio called Cerchio. The final product is a blog with its content stored as a headless CMS. Built with JavaScript, HTML, CSS & WordPress.",
-    languages: "Built with HTML, CSS & WordPress",
+    languages: "Built with JavaScript, HTML, CSS & WordPress",
     image: "../../public/projects/cerchiostudio.jpg",
     github: "https://github.com/mathildeew/projext-exam-1-cerchio-studio",
     link: "https://cerchio-studio.netlify.app/",
