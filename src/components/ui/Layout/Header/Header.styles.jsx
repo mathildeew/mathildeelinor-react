@@ -7,7 +7,7 @@ export const HeaderContainer = styled.header`
   })}
 
   height: 50px;
-  width: 98%;
+  width: 100%;
   max-width: 900px;
   height: 100%;
   margin: 0 auto;
@@ -16,6 +16,8 @@ export const HeaderContainer = styled.header`
     font-size: 3rem;
     padding: 5px;
     position: relative;
+    top: 20px;
+    right: 20px;
     z-index: 2;
     transition: all 0.4s ease-in-out;
 
@@ -102,28 +104,33 @@ export const HeaderContainer = styled.header`
 
     a {
       font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    svg {
+      font-size: 2.5rem;
     }
   }
 
   @media (min-width: 750px) {
-    nav {
-      position: relative;
-    }
-
     .menu {
       width: 280px;
-      height: 600px;
-      left: unset;
+    }
+
+    ul {
+      margin-bottom: 60px;
     }
   }
 
-  @media (min-width: 1050px) {
+  @media (min-width: 900px) {
     nav {
       position: relative;
     }
+  }
 
+  @media (min-width: 1400px) {
     .menu {
-      left: 5px;
+      left: -20px;
     }
   }
 `;

@@ -13,9 +13,7 @@ export default function Header() {
   return (
     <HeaderContainer>
       <m.nav
-        initial={{
-          opacity: 0,
-        }}
+        initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.8, duration: 0.5, ease: "easeInOut" }}
       >
@@ -28,16 +26,21 @@ export default function Header() {
           <div className="menuContainer">
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/" onClick={() => setShowMenu(false)}>
+                  Home
+                </Link>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <Link to="/portfolio" onClick={() => setShowMenu(false)}>
+                  Portfolio
+                </Link>
               </li>
               <li>
-                <Link to="/portfolio">Portfolio</Link>
-              </li>
-              <li>
-                <Link to="../../../public/cv0.pdf" target="_blank">
+                <Link
+                  to="../../../public/cv0.pdf"
+                  target="_blank"
+                  onClick={() => setShowMenu(false)}
+                >
                   My CV
                 </Link>
               </li>
@@ -49,9 +52,11 @@ export default function Header() {
                 hei@mathildeelinor.no
               </Link>
               <div className="socialIcons">
-                <Link to="https://github.com/mathildeew">GH</Link>
+                <Link to="https://github.com/mathildeew">
+                  <FontAwesomeIcon icon={faGithub} />
+                </Link>
                 <Link to="https://www.linkedin.com/in/mathilde-elinor-wiik-88075b249/">
-                  LI
+                  <FontAwesomeIcon icon={faLinkedin} />
                 </Link>
               </div>
             </div>
