@@ -1,14 +1,24 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Media from "react-media";
 import { motion as m } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsis } from "@fortawesome/free-solid-svg-icons";
 import { HeaderContainer } from "./Header.styles";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { useEffect } from "react";
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
+
+  function hideOnScroll() {
+    if (window.scrollY > 3) {
+      setShowMenu(false);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", hideOnScroll);
+  });
 
   return (
     <HeaderContainer>
@@ -22,6 +32,7 @@ export default function Header() {
           icon={faEllipsis}
           onClick={() => setShowMenu(!showMenu)}
         />
+
         <div className={showMenu ? "menu active" : "menu inactive"}>
           <div className="menuContainer">
             <ul>
@@ -53,10 +64,10 @@ export default function Header() {
               </Link>
               <div className="socialIcons">
                 <Link to="https://github.com/mathildeew">
-                  <FontAwesomeIcon icon={faGithub} />
+                  <FontAwesomeIcon icon={faGithub} className="contactIcon" />
                 </Link>
                 <Link to="https://www.linkedin.com/in/mathilde-elinor-wiik-88075b249/">
-                  <FontAwesomeIcon icon={faLinkedin} />
+                  <FontAwesomeIcon icon={faLinkedin} className="contactIcon" />
                 </Link>
               </div>
             </div>
