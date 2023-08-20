@@ -7,13 +7,13 @@ export const PortfolioContainer = styled.main`
     margin-top: 50px;
   }
 
-  #intro p:first-child,
+  .intro p:first-child,
   .bulk p,
   img {
     margin-bottom: 20px;
   }
 
-  #projects {
+  .projects {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 80px;
@@ -37,7 +37,7 @@ export const PortfolioContainer = styled.main`
       font-size: 15rem;
     }
 
-    #projects {
+    .projects {
       grid-template-columns: repeat(1, 1fr);
       grid-row-gap: 100px;
     }
