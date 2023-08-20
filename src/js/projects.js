@@ -54,14 +54,4 @@ export const projects = [
       "https://github.com/mathildeew/semester-project-1-community-science-museum",
     link: "https://csm-oslo.netlify.app/",
   },
-  {
-    id: 1,
-    name: "My old and retired portfolio",
-    title: "Portfolio 1",
-    description: "Beige and sad.",
-    languages: "Built with HTML/CSS & JavaScript.",
-    image: "../../public/projects/me-old.png",
-    github: "https://github.com/mathildeew/mathildeelinor.no",
-    link: "https://mathildeelinor.no/old",
-  },
 ];
