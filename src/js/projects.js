@@ -1,6 +1,6 @@
 export const projects = [
   {
-    id: 5,
+    id: 6,
     name: "Holidaze",
     title: "Project Exam 2",
     description:
@@ -10,7 +10,7 @@ export const projects = [
     link: "",
   },
   {
-    id: 4,
+    id: 5,
     name: "Sjåpp",
     title: "JavaScript Frameworks CA",
     description:
@@ -21,7 +21,7 @@ export const projects = [
     link: "https://sjaapp.netlify.app/",
   },
   {
-    id: 3,
+    id: 4,
     name: "Gavel",
     title: "Semester Project 2",
     description:
@@ -32,7 +32,7 @@ export const projects = [
     link: "https://gavel-sp2.netlify.app/",
   },
   {
-    id: 2,
+    id: 3,
     name: "Cerchio Studio",
     title: "Project Exam 1",
     description:
@@ -43,7 +43,7 @@ export const projects = [
     link: "https://cerchio-studio.netlify.app/",
   },
   {
-    id: 1,
+    id: 2,
     name: "Community Sciene Museum",
     title: "Semester Project 1",
     description:
@@ -53,5 +53,15 @@ export const projects = [
     github:
       "https://github.com/mathildeew/semester-project-1-community-science-museum",
     link: "https://csm-oslo.netlify.app/",
+  },
+  {
+    id: 1,
+    name: "My old and retired portfolio",
+    title: "Portfolio 1",
+    description: "Beige and sad.",
+    languages: "Built with HTML/CSS & JavaScript.",
+    image: "../../public/projects/me-old.png",
+    github: "https://github.com/mathildeew/mathildeelinor.no",
+    link: "https://mathildeelinor.no/old",
   },
 ];
