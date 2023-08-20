@@ -12,6 +12,7 @@ export default function Layout() {
           width: "100vw",
           height: "100vh",
           position: "absolute",
+          zIndex: "10",
         }}
         animate={{ y: "-100%" }}
         transition={{ delay: 0.2, duration: 0.5, ease: "easeInOut" }}
