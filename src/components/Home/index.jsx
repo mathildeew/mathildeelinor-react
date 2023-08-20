@@ -1,6 +1,6 @@
 import { motion as m } from "framer-motion";
 import { Link } from "react-router-dom";
-import { BaseButton } from "../../../styles/Button";
+import { Button } from "../../../styles/Button";
 import { HomeContainer } from "./HomeContainer.styles";
 
 export default function Home() {
@@ -45,37 +45,30 @@ export default function Home() {
       </div>
 
       <m.div
-        id="about"
         animate={{ y: 0, opacity: 1 }}
         initial={{ y: "10%", opacity: 0 }}
         transition={{ delay: 0.5, duration: 0.5 }}
       >
         <h2>About</h2>
 
-        <div id="text" className="part">
+        <div className="text part">
           <p>
-            As long as I can remember I have been drawn to combining technology
-            and design. The infinite potential has always fascinated me and I
-            have never been afraid to just jump in and give it a go, whether it
-            is Microsoft Paint, HTML/CSS, blogging, World of Worldcraft or
-            Photoshop. Unfortunately for me, I always considered these as mere
-            hobbies.
+            As long as I can remember I have made things where functionality and
+            aesthetics are connected, and have especially dived into the
+            technological world. I have never been afraid to just give it a go
+            and explore the infinite potential, whether its Microsoft Paint,
+            HTML/CSS, blogging, World of Warcraft, or Photoshop. Unfortunately
+            for me, I always considered these as mere hobbies.
           </p>
           <p>
-            Fast forward to 2021 and I decided to step away from my optometrist
-            career and pursue my long-lasting yearning of a technology and
-            design based occupation. As I am finishing up the front-end
-            development education at Noroff, I am thrilled to finally be able to
-            create, design and maintain user-friendly concepts that solves real
-            problems and has a purpose.
+            Fast forward to 2021 and I decided to step away from my role as an
+            optometrist and pursue my long-lasting craving of a technology and
+            design based career. As I am finishing up the front-end development
+            education at Noroff, I am electrified to finally be able to create,
+            design and maintain user-friendly concepts and satisfy my curiosity
+            around new technologies.
           </p>
         </div>
-
-        <BaseButton className="part">
-          <Link to="../../../public/cv0.pdf" target="_blank">
-            My CV
-          </Link>
-        </BaseButton>
 
         <section className="part">
           <div className="bulk">
@@ -92,18 +85,27 @@ export default function Home() {
           </div>
 
           <div className="bulk">
-            <h3>Frameworks & libraries</h3>
+            <h3>Frameworks &amp; libraries</h3>
             <p>React, Bootstrap, Jest</p>
           </div>
 
           <div className="bulk">
-            <h3>Tools & platforms</h3>
+            <h3>Tools &amp; platforms</h3>
             <p>
               GitHub, WordPress, Cypress, Netlify, Adobe XD, Figma, Photoshop,
               Illustrator
             </p>
           </div>
         </section>
+
+        <Button>
+          <Link to="../../../public/cv0.pdf" target="_blank">
+            My CV
+          </Link>
+          <span></span>
+          <span></span>
+          <span></span>
+        </Button>
       </m.div>
     </HomeContainer>
   );

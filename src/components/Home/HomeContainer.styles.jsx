@@ -5,7 +5,6 @@ export const HomeContainer = styled.section`
   .intro {
     ${displayFlex({
       direction: "column",
-      justify: "",
     })}
     overflow: hidden;
   }
@@ -13,20 +12,23 @@ export const HomeContainer = styled.section`
   h1 {
     font-size: 13vw;
     font-weight: 500;
-    margin-bottom: 60px;
   }
 
   h3 {
     margin-bottom: 5px;
   }
 
+  h1,
+  .blobContainer {
+    margin-bottom: 60px;
+  }
+
   .blobContainer {
     ${displayFlex({
       direction: "column",
-      justify: "space-between",
+      justify: "space-around",
     })}
     height: 550px;
-    margin-bottom: 50px;
 
     .blobText {
       font-family: Fromage, serif;
@@ -36,19 +38,18 @@ export const HomeContainer = styled.section`
   }
 
   .blob {
-    width: 270px;
-    height: 350px;
-    background-color: var(--color-primary);
-    border-radius: 40% 56% 72% 28% / 42% 42% 56% 48%;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    animation: morph 2.75s linear infinite;
-
     ${displayFlex({
       direction: "column",
       justify: "center",
       align: "center",
     })}
+
+    width: 270px;
+    height: 350px;
+    background-color: var(--color-primary);
+    border-radius: 40% 56% 72% 28% / 42% 42% 56% 48%;
+    margin: 0 auto;
+    animation: morph 2.75s linear infinite;
   }
 
   @keyframes morph {
@@ -71,12 +72,9 @@ export const HomeContainer = styled.section`
     background-size: cover;
     background-position: center center;
     border-radius: 40% 56% 72% 28% / 42% 42% 56% 48%;
-    /* border-top-right-radius: 50%;
-    border-top-left-radius: 50%; */
-    /* box-shadow: 6px -6px 0px 0px var(--color-secondary); */
   }
 
-  #text p:first-child {
+  .text p:first-child {
     margin-bottom: 20px;
   }
 
@@ -90,14 +88,6 @@ export const HomeContainer = styled.section`
     p:first-child {
       margin-right: 7px;
     }
-  }
-
-  .boldText {
-    font-weight: 600;
-  }
-
-  .part {
-    overflow: hidden;
   }
 
   @media (min-width: 768px) {
