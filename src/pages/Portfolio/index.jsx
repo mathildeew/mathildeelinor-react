@@ -3,15 +3,17 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { motion as m } from "framer-motion";
 import { projects } from "../../js/projects";
 import { PortfolioContainer } from "./PortfolioContainer.styles";
+import SEOHelmet from "../../components/SEOHelmet";
 
 export default function Portfolio() {
   return (
     <>
-      <HelmetProvider>
-        <Helmet>
-          <title>Mathilde Elinor | Portfolio</title>
-        </Helmet>
-      </HelmetProvider>
+      <SEOHelmet
+        title={"Portfolio"}
+        content={
+          "Mathilde Elinor is a front-end developer based in Oslo, Norway."
+        }
+      />
 
       <PortfolioContainer>
         <m.h1

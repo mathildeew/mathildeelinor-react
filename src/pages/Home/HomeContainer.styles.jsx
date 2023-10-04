@@ -2,6 +2,14 @@ import styled from "styled-components";
 import { displayFlex } from "../../../styles/mixins";
 
 export const HomeContainer = styled.section`
+  max-width: 700px;
+  padding: 0 8%;
+  margin: 50px auto;
+
+  .part {
+    margin-bottom: 50px;
+  }
+
   .intro {
     ${displayFlex({
       direction: "column",

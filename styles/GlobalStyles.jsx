@@ -73,13 +73,4 @@ li {
   list-style: none;
 }
 
-.wrapper {
-  max-width: 700px;
-  padding: 0 8%;
-  margin: 50px auto;
-  }
-
-.part {
-    margin-bottom: 50px;
-  }
 `;
