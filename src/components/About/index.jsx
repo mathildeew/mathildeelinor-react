@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
 import { motion as m } from "framer-motion";
-import { Button } from "../../../styles/Button";
 
 export default function About() {
   return (
@@ -11,7 +9,7 @@ export default function About() {
     >
       <h2>About</h2>
 
-      <div className="text part mb-14">
+      <div className="mb-14">
         <p className="mb-5">
           As long as I can remember I have made things where functionality and
           aesthetics are connected, and have especially dived into the
@@ -30,8 +28,8 @@ export default function About() {
         </p>
       </div>
 
-      <div className="part mb-14">
-        <div className="bulk mb-8">
+      <div className="mb-14">
+        <div className="mb-8">
           <h2>Skills</h2>
           <p>
             Web accessibility, SE Optimization, FE Optimization, responsive web
@@ -39,17 +37,17 @@ export default function About() {
           </p>
         </div>
 
-        <div className="bulk mb-8">
+        <div className="mb-8">
           <h3 className="mb-1.5">Languages</h3>
           <p>JavaScript, CSS, Sass, HTML, Git</p>
         </div>
 
-        <div className="bulk mb-8">
+        <div className="mb-8">
           <h3 className="mb-1.5">Frameworks &amp; libraries</h3>
           <p>React, Bootstrap, Jest</p>
         </div>
 
-        <div className="bulk mb-8">
+        <div className="mb-8">
           <h3 className="mb-1.5">Tools &amp; platforms</h3>
           <p>
             GitHub, WordPress, Cypress, Netlify, Adobe XD, Figma, Photoshop,

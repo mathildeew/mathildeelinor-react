@@ -1,7 +1,6 @@
 import About from "../../components/About";
 import Hero from "../../components/Hero";
 import SEOHelmet from "../../components/SEOHelmet";
-import { HomeContainer } from "./HomeContainer.styles";
 
 export default function Home() {
   return (
@@ -11,11 +10,11 @@ export default function Home() {
         content="Mathilde Elinor is a front-end developer based in Oslo, Norway"
       />
 
-      <HomeContainer className="wrapper">
+      <div>
         <Hero />
 
         <About />
-      </HomeContainer>
+      </div>
     </>
   );
 }
