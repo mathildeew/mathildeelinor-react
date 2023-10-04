@@ -1,6 +1,6 @@
+import { Link } from "react-router-dom";
 import { motion as m } from "framer-motion";
 import { Button } from "../../../styles/Button";
-import { Link } from "react-router-dom";
 
 export default function About() {
   return (

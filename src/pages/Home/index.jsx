@@ -1,6 +1,3 @@
-import { motion as m } from "framer-motion";
-import { Link } from "react-router-dom";
-import { Button } from "../../../styles/Button";
 import About from "../../components/About";
 import Hero from "../../components/Hero";
 import SEOHelmet from "../../components/SEOHelmet";
@@ -16,6 +13,7 @@ export default function Home() {
 
       <HomeContainer className="wrapper">
         <Hero />
+
         <About />
       </HomeContainer>
     </>
