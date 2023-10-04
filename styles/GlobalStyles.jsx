@@ -1,37 +1,37 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-* {
+/* * {
     margin: 0;
-}
+} */
 
 html {
-  --color-primary: #39469B;
-  --color-secondary:  #F4E6D7;
-  font-size: 62.5%;
-  overflow-x: hidden;
+  /* --color-primary: #39469B;
+  --color-secondary:  #F4E6D7; */
+  /* font-size: 62.5%; */
+  /* overflow-x: hidden; */
 
 }
 
-#root {
+/* #root {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
+} */
 
 body {
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
-  width: 100vw;
+  /* color: var(--color-primary); */
+  /* background-color: var(--color-secondary); */
+  /* width: 100vw; */
 }
 
-main {
+/* main {
   width: 100%;
   margin: 0 auto;
   flex-grow: 1;
-}
+} */
 
-h2 {
+/* h2 {
   font-family: Montserrat, sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
@@ -71,6 +71,6 @@ ul {
 
 li {
   list-style: none;
-}
+} */
 
 `;
