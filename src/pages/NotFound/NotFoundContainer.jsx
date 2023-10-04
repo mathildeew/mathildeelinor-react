@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const NotFoundContainer = styled.main`
+export const NotFoundContainer = styled.section`
   text-align: center;
   h1 {
     font-size: 2rem;

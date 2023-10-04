@@ -2,15 +2,12 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMugHot } from "@fortawesome/free-solid-svg-icons";
 import { NotFoundContainer } from "./NotFoundContainer";
+import SEOHelmet from "../../components/SEOHelmet";
 
 export default function NotFound() {
   return (
     <>
-      <HelmetProvider>
-        <Helmet>
-          <title>Mathilde Elinor | Page not found</title>
-        </Helmet>
-      </HelmetProvider>
+      <SEOHelmet title={"Page not found"} />
 
       <NotFoundContainer>
         <div className="wrapper">
