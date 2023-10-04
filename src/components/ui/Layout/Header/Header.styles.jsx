@@ -2,18 +2,18 @@ import styled from "styled-components";
 import { displayFlex } from "../../../../../styles/mixins";
 
 export const HeaderContainer = styled.header`
-  ${displayFlex({
+  /* ${displayFlex({
     justify: "end",
-  })}
+  })} */
 
-  height: 50px;
-  width: 100%;
-  max-width: 900px;
-  height: 100%;
-  margin: 0 auto;
+  /* height: 50px; */
+  /* width: 100%; */
+  /* max-width: 900px; */
+  /* height: 100%; */
+  /* margin: 0 auto; */
 
   .ellipsis {
-    font-size: 3rem;
+    /* font-size: 3rem; */
     padding: 5px;
     position: relative;
     top: 20px;
@@ -27,11 +27,11 @@ export const HeaderContainer = styled.header`
     }
   }
 
-  a,
+  /* a,
   span {
     color: var(--color-secondary);
     padding: 10px;
-  }
+  } */
 
   .menu {
     ${displayFlex({
@@ -61,47 +61,47 @@ export const HeaderContainer = styled.header`
   }
 
   .menuContainer {
-    ${displayFlex({
+    /* ${displayFlex({
       direction: "column",
-    })}
+    })} */
 
-    width: 100%;
-    margin: 70px 20px 30px 0;
+    /* width: 100%; */
+    /* margin: 70px 20px 30px 0; */
   }
 
   ul {
-    text-align: end;
+    /* text-align: end; */
 
     li {
-      margin-bottom: 20px;
+      /* margin-bottom: 20px; */
     }
 
     a {
-      font-family: Fromage, sans-serif;
-      font-size: 3rem;
+      /* font-family: Fromage, sans-serif;
+      font-size: 3rem; */
     }
   }
 
   .basicContact {
-    ${displayFlex({
+    /* ${displayFlex({
       direction: "column",
     })}
 
-    text-align: end;
+    text-align: end; */
 
-    span,
+    /* span,
     a {
       font-family: Montserrat, sans-serif;
-    }
+    } */
 
     span {
-      font-size: 2rem;
-      text-transform: uppercase;
+      /* font-size: 2rem;
+      text-transform: uppercase; */
     }
 
     a {
-      font-size: 1.6rem;
-      margin-bottom: 10px;
+      /* font-size: 1.6rem; */
+      /* margin-bottom: 10px; */
     }
 
     .contactIcon {

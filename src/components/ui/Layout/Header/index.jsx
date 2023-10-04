@@ -21,7 +21,7 @@ export default function Header() {
   });
 
   return (
-    <HeaderContainer>
+    <HeaderContainer className="border-2 border-black w-full max-w-900 h-full flex justify-end mx-auto">
       <m.nav
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -34,32 +34,44 @@ export default function Header() {
         />
 
         <div className={showMenu ? "menu active" : "menu inactive"}>
-          <div className="menuContainer">
-            <ul>
-              <li>
-                <Link to="/" onClick={() => setShowMenu(false)}>
+          <div className="menuContainer mt-16 mr-5 mb-8">
+            <ul className="text-end">
+              <li className="mb-5">
+                <Link
+                  to="/"
+                  onClick={() => setShowMenu(false)}
+                  className="text-3xl"
+                >
                   Home
                 </Link>
               </li>
-              <li>
-                <Link to="/portfolio" onClick={() => setShowMenu(false)}>
+              <li className="mb-5">
+                <Link
+                  to="/portfolio"
+                  onClick={() => setShowMenu(false)}
+                  className="text-3xl"
+                >
                   Portfolio
                 </Link>
               </li>
-              <li>
+              <li className="mb-5">
                 <Link
                   to="../../../../../public/CV_MathildeElinor_en.pdf"
                   target="_blank"
                   onClick={() => setShowMenu(false)}
+                  className="text-3xl"
                 >
                   My CV
                 </Link>
               </li>
             </ul>
 
-            <div className="basicContact">
-              <span>Say hello</span>
-              <Link to="mailto: hei@mathildeelinor.no" className="contactEmail">
+            <div className="basicContact flex flex-col text-center">
+              <span className="font-sans text-xl uppercase">Say hello</span>
+              <Link
+                to="mailto: hei@mathildeelinor.no"
+                className="contactEmail font-sans"
+              >
                 hei@mathildeelinor.no
               </Link>
               <div className="socialIcons">

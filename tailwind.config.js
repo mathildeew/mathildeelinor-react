@@ -14,6 +14,9 @@ export default {
       fontSize: {
         home: "13vw",
       },
+      maxWidth: {
+        900: "900px",
+      },
       borderRadius: {
         blob: "40% 56% 72% 28% / 42% 42% 56% 48%",
       },
