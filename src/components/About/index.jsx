@@ -11,8 +11,8 @@ export default function About() {
     >
       <h2>About</h2>
 
-      <div className="text part">
-        <p>
+      <div className="text part mb-14">
+        <p className="mb-5">
           As long as I can remember I have made things where functionality and
           aesthetics are connected, and have especially dived into the
           technological world. I have never been afraid to just give it a go and
@@ -30,8 +30,8 @@ export default function About() {
         </p>
       </div>
 
-      <div className="part">
-        <div className="bulk">
+      <div className="part mb-14">
+        <div className="bulk mb-8">
           <h2>Skills</h2>
           <p>
             Web accessibility, SE Optimization, FE Optimization, responsive web
@@ -39,17 +39,17 @@ export default function About() {
           </p>
         </div>
 
-        <div className="bulk">
+        <div className="bulk mb-8">
           <h3>Languages</h3>
           <p>JavaScript, CSS, Sass, HTML, Git</p>
         </div>
 
-        <div className="bulk">
+        <div className="bulk mb-8">
           <h3>Frameworks &amp; libraries</h3>
           <p>React, Bootstrap, Jest</p>
         </div>
 
-        <div className="bulk">
+        <div className="bulk mb-8">
           <h3>Tools &amp; platforms</h3>
           <p>
             GitHub, WordPress, Cypress, Netlify, Adobe XD, Figma, Photoshop,
@@ -57,14 +57,14 @@ export default function About() {
           </p>
         </div>
 
-        <Button>
+        {/* <Button>
           <Link to="../../../public/CV_MathildeElinor_en.pdf" target="_blank">
             My CV
           </Link>
           <span></span>
           <span></span>
           <span></span>
-        </Button>
+        </Button> */}
       </div>
     </m.section>
   );
