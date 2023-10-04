@@ -1,3 +1,76 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+  }
+
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+  }
+
+  body {
+    color: theme(colors.primary);
+    background-color: theme(colors.secondary);
+    width: 100vw;
+    min-height: 100vh;
+  }
+
+  main {
+    width: 100%;
+    margin: 0 auto;
+    flex-grow: 1;
+  }
+
+  h2 {
+    font-family: theme(fontFamily.sans);
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  h3 {
+    font-family: theme(fontFamily.sans);
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  p {
+    font-family: theme(fontFamily.sans);
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    padding: 2px;
+  }
+
+  h1,
+  h2,
+  h3,
+  p,
+  a,
+  span {
+    color: theme(colors.primary);
+  }
+
+  h1,
+  a,
+  span {
+    font-family: theme(fontFamily.serif);
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+}
