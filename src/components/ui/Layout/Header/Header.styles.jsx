@@ -13,8 +13,8 @@ export const HeaderContainer = styled.header`
   /* margin: 0 auto; */
 
   .ellipsis {
-    /* font-size: 3rem; */
-    padding: 5px;
+    font-size: 3rem;
+    /* padding: 5px;
     position: relative;
     top: 20px;
     right: 20px;
@@ -24,7 +24,7 @@ export const HeaderContainer = styled.header`
     &.active {
       color: var(--color-secondary);
       transform: rotate(90deg);
-    }
+    } */
   }
 
   /* a,
@@ -34,7 +34,7 @@ export const HeaderContainer = styled.header`
   } */
 
   .menu {
-    ${displayFlex({
+    /* ${displayFlex({
       direction: "column",
       align: "flex-end",
     })}
@@ -57,7 +57,7 @@ export const HeaderContainer = styled.header`
       top: 0px;
       opacity: 1;
       visibility: visible;
-    }
+    } */
   }
 
   .menuContainer {
@@ -105,7 +105,7 @@ export const HeaderContainer = styled.header`
     }
 
     .contactIcon {
-      font-size: 2.5rem;
+      /* font-size: 2.5rem; */
     }
   }
 
