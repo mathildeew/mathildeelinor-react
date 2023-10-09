@@ -9,12 +9,12 @@ export default function Projects() {
           <img
             src={project.image}
             alt={project.name}
-            className="w-full h-auto"
+            className="w-full h-auto mb-5"
           />
           <h2>{project.name}</h2>
           <h3>{project.title}</h3>
-          <p>{project.description}</p>
-          <p>{project.languages}</p>
+          <p className="mb-5">{project.description}</p>
+          <p className="mb-5">{project.languages}</p>
           <Link
             to={project.link}
             className="font-sans font-medium underline mr-5"
