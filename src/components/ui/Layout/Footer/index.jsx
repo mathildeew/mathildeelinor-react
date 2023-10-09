@@ -1,9 +1,7 @@
-import { FooterContainer } from "./FooterContainer.styles";
-
 export default function Footer() {
   return (
-    <FooterContainer>
+    <footer className="w-full h-11 flex justify-center items-center">
       <p>© 2023 Mathilde Elinor Wiik</p>
-    </FooterContainer>
+    </footer>
   );
 }

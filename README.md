@@ -9,5 +9,5 @@ My personal website & portfolio.
 ## Built with
 
 - React + Vite
-- Styled Components
+- Tailwind CSS
 - Framer Motion
