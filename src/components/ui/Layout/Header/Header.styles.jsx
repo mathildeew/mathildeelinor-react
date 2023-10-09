@@ -44,9 +44,9 @@ export const HeaderContainer = styled.header`
     height: 100vh;
     position: absolute;
     right: 0px;
-    z-index: 1;
+    z-index: 1; */
     transition: all 0.4s ease;
-
+    /* 
     &.inactive {
       top: -100vh;
       opacity: 0;
@@ -111,23 +111,23 @@ export const HeaderContainer = styled.header`
 
   @media (min-width: 750px) {
     .menu {
-      width: 280px;
+      /* width: 280px; */
     }
 
     ul {
-      margin-bottom: 60px;
+      /* margin-bottom: 60px; */
     }
   }
 
   @media (min-width: 900px) {
     nav {
-      position: relative;
+      /* position: relative; */
     }
   }
 
   @media (min-width: 1400px) {
     .menu {
-      left: -20px;
+      /* left: -20px; */
     }
   }
 
