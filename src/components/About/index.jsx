@@ -38,31 +38,22 @@ export default function About() {
         </div>
 
         <div className="mb-8">
-          <h3 className="mb-1.5">Languages</h3>
+          <h3>Languages</h3>
           <p>JavaScript, CSS, Sass, HTML, Git</p>
         </div>
 
         <div className="mb-8">
-          <h3 className="mb-1.5">Frameworks &amp; libraries</h3>
+          <h3>Frameworks &amp; libraries</h3>
           <p>React, Bootstrap, Jest</p>
         </div>
 
         <div className="mb-8">
-          <h3 className="mb-1.5">Tools &amp; platforms</h3>
+          <h3>Tools &amp; platforms</h3>
           <p>
             GitHub, WordPress, Cypress, Netlify, Adobe XD, Figma, Photoshop,
             Illustrator
           </p>
         </div>
-
-        {/* <Button>
-          <Link to="../../../public/CV_MathildeElinor_en.pdf" target="_blank">
-            My CV
-          </Link>
-          <span></span>
-          <span></span>
-          <span></span>
-        </Button> */}
       </div>
     </m.section>
   );

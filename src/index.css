@@ -15,15 +15,18 @@
     color: theme(colors.primary);
     background-color: theme(colors.secondary);
     width: 100vw;
-    min-height: 100vh;
   }
 
   main {
     width: 100%;
     max-width: 700px;
-    margin: 10px auto;
-    flex-grow: 1;
+    min-height: 100vh;
+    margin: 50px auto;
     padding: 0 15px;
+  }
+
+  h1 {
+    margin-bottom: 50px;
   }
 
   h2 {
@@ -39,6 +42,7 @@
     font-family: theme(fontFamily.sans);
     font-size: 14px;
     font-weight: 600;
+    margin-bottom: 6px;
   }
 
   p {

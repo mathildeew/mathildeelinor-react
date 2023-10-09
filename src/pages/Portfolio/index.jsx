@@ -18,7 +18,7 @@ export default function Portfolio() {
           animate={{ y: 0 }}
           initial={{ y: "-20px" }}
           transition={{ delay: 0.5, duration: 0.5 }}
-          className="text-6xl text-center my-12 md:text-9xl"
+          className="text-6xl text-center md:text-9xl"
         >
           Projects
         </m.h1>
