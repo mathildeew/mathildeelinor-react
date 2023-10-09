@@ -17,11 +17,14 @@ export default function Projects() {
           <p className="mb-5">{project.languages}</p>
           <Link
             to={project.link}
-            className="font-sans font-medium underline mr-5"
+            className="font-sans font-medium underline mr-5 hover:italic hover:relative hover:left-1"
           >
             Check out
           </Link>
-          <Link to={project.github} className="font-sans font-medium underline">
+          <Link
+            to={project.github}
+            className="font-sans font-medium underline hover:italic hover:relative hover:left-1"
+          >
             GitHub
           </Link>
         </div>

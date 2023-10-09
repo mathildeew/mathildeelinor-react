@@ -2,7 +2,7 @@ import { motion as m } from "framer-motion";
 
 export default function Hero() {
   return (
-    <div className="flex flex-col overflow-hidden">
+    <section className="flex flex-col overflow-hidden">
       <m.h1
         animate={{ y: 0 }}
         initial={{ y: "-100%" }}
@@ -40,6 +40,6 @@ export default function Hero() {
           <img src="/public/self1.jpg" className="h-80 rounded-blob" />
         </m.div>
       </div>
-    </div>
+    </section>
   );
 }

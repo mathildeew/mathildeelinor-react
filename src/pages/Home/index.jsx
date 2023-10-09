@@ -1,6 +1,6 @@
+import SEOHelmet from "../../components/SEOHelmet";
 import About from "../../components/About";
 import Hero from "../../components/Hero";
-import SEOHelmet from "../../components/SEOHelmet";
 
 export default function Home() {
   return (
@@ -12,7 +12,6 @@ export default function Home() {
 
       <div>
         <Hero />
-
         <About />
       </div>
     </>

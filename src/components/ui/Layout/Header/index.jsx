@@ -47,7 +47,7 @@ export default function Header() {
                 <Link
                   to="/"
                   onClick={() => setShowMenu(false)}
-                  className="text-secondary text-3xl "
+                  className="text-secondary text-3xl hover:relative hover:left-1 hover:italic"
                 >
                   Home
                 </Link>
@@ -56,7 +56,7 @@ export default function Header() {
                 <Link
                   to="/portfolio"
                   onClick={() => setShowMenu(false)}
-                  className="text-secondary text-3xl"
+                  className="text-secondary text-3xl hover:relative hover:left-1 hover:italic"
                 >
                   Portfolio
                 </Link>
@@ -66,7 +66,7 @@ export default function Header() {
                   to="../../../../../public/CV_MathildeElinor_en.pdf"
                   target="_blank"
                   onClick={() => setShowMenu(false)}
-                  className="text-secondary text-3xl"
+                  className="text-secondary text-3xl hover:relative hover:left-1 hover:italic"
                 >
                   My CV
                 </Link>
@@ -79,7 +79,7 @@ export default function Header() {
               </span>
               <Link
                 to="mailto: hei@mathildeelinor.no"
-                className=" text-secondary font-sans mb-2.5"
+                className=" text-secondary font-sans mb-2.5 hover:italic"
               >
                 hei@mathildeelinor.no
               </Link>
