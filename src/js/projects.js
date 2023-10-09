@@ -1,6 +1,6 @@
 export const projects = [
   {
-    id: 6,
+    id: 5,
     name: "Holidaze",
     title: "Project Exam 2",
     description:
@@ -12,7 +12,7 @@ export const projects = [
     link: "https://holidaze-projectexam2.netlify.app/",
   },
   {
-    id: 5,
+    id: 4,
     name: "Sjåpp",
     title: "JavaScript Frameworks CA",
     description:
@@ -24,34 +24,35 @@ export const projects = [
     link: "https://sjaapp.netlify.app/",
   },
   {
-    id: 4,
+    id: 3,
     name: "Gavel",
     title: "Semester Project 2",
     description:
-      "Gavel is an online auction site. The API functionality is managed by an existing application, and the project covers the front-end application for the API. It features user authentication, listing auctions and bidding. The project incorporates Prettier for code formatting, ESLint for linting and Cypress for E2E testing.",
-    languages: "Built with JavaScript, HTML & Bootstrap.",
+      "Gavel is an online auction site. The API functionality is managed by an existing application, and the project covers the front-end application for the API. It features user authentication, listing auctions and bidding. The project integrates Prettier for code formatting, ESLint for linting and Cypress for E2E testing.",
+    languages:
+      "Built with JavaScript, HTML, Bootstrap and Noroff Auction House API.",
     image: "../../public/projects/gavel.png",
     github: "https://github.com/mathildeew/semester-project-2",
     link: "https://gavel-sp2.netlify.app/",
   },
   {
-    id: 3,
+    id: 2,
     name: "Cerchio Studio",
     title: "Project Exam 1",
     description:
-      "This project is assigned to a fictional ceramic studio called Cerchio. The final product is a blog with its content stored as a headless CMS. Built with JavaScript, HTML, CSS & WordPress.",
-    languages: "Built with JavaScript, HTML, CSS & WordPress",
+      "The final project of the first year was a self-selected blog site, assigned to a fictional ceramic studio called Cerchio. The project is a summary of all skills learned the first year with an emphasis on design principles, web development and content management system. The blog features a search function, category filtering, a blogpost carousel and all the content stored as a headless CMS.",
+    languages: "Built with JavaScript, HTML, CSS and WordPress REST Api.",
     image: "../../public/projects/cerchiostudio.jpg",
     github: "https://github.com/mathildeew/projext-exam-1-cerchio-studio",
     link: "https://cerchio-studio.netlify.app/",
   },
   {
-    id: 2,
+    id: 1,
     name: "Community Sciene Museum",
     title: "Semester Project 1",
     description:
-      "The website for Community Science Museum, a fictional museum. The brief was to make a informative and engaging website, that should be responsive and easy to use on a variety of devices.",
-    languages: "Built with HTML & CSS.",
+      "The website for Community Science Museum, a fictional museum with a core target audience aged 7-15. The brief was to make an informative and engaging website, that should be responsive and easy to use on a variety of devices. The project shows knowledge in design and WCAG principles, consideration for content strategy and SEO.",
+    languages: "Built with HTML and CSS.",
     image: "../../public/projects/csm.jpg",
     github:
       "https://github.com/mathildeew/semester-project-1-community-science-museum",
