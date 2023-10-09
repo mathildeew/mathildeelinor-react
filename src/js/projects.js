@@ -7,7 +7,7 @@ export const projects = [
       "The final exam project at Noroff. The project is an extensive application that showcase all skills gained throughout the last two years. Holidaze is an accommodation booking site that provides the customer-facing side where users can book holidays at a venue, and an admin-facing side where users can register and manage venues and bookings at those venues.",
     languages:
       "Built with React+Vite, styled-components, JavaScript, HTML and Noroff Holidaze API.",
-    image: "../../public/projects/holidaze-landingpage.jpg",
+    image: "../../public/projects/holidaze.jpg",
     github: "https://github.com/mathildeew/project-exam2-holidaze",
     link: "https://holidaze-projectexam2.netlify.app/",
   },
