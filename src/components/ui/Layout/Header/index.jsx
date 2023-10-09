@@ -20,7 +20,7 @@ export default function Header() {
   });
 
   return (
-    <header className="w-full max-w-900 h-full flex justify-end mx-auto">
+    <header className="w-full max-w-900 h-full flex justify-end mx-auto mb-16">
       <m.nav
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -28,6 +28,7 @@ export default function Header() {
         className="md-900:relative"
       >
         <FontAwesomeIcon
+          aria-label="Toggles menu"
           size="2x"
           className={`p-1.5 relative top-5 right-5 z-20 transition-all duration-500 ease-in-out ${
             showMenu && "text-secondary rotate-90"
@@ -79,7 +80,7 @@ export default function Header() {
               </span>
               <Link
                 to="mailto: hei@mathildeelinor.no"
-                className=" text-secondary font-sans mb-2.5 hover:italic"
+                className="text-secondary font-sans mb-2.5 hover:italic"
               >
                 hei@mathildeelinor.no
               </Link>

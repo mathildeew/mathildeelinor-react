@@ -44,7 +44,7 @@ export default function About() {
 
         <div className="mb-8">
           <h3>Frameworks &amp; libraries</h3>
-          <p>React, Bootstrap, Jest</p>
+          <p>React, Bootstrap, Tailwind CSS, Jest</p>
         </div>
 
         <div className="mb-8">

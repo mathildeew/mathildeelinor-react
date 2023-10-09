@@ -7,7 +7,7 @@ export default function Hero() {
         animate={{ y: 0 }}
         initial={{ y: "-100%" }}
         transition={{ delay: 0.5, duration: 0.5 }}
-        className="text-home font-medium mb-16 md:text-8xl"
+        className="text-home font-medium md:text-8xl"
       >
         Mathilde Elinor
       </m.h1>
@@ -37,7 +37,11 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           transition={{ delay: 0.8, duration: 0.8 }}
         >
-          <img src="/public/self1.jpg" className="h-80 rounded-blob" />
+          <img
+            alt="Mathilde Elinor"
+            src="/public/self1.jpg"
+            className="h-80 rounded-blob"
+          />
         </m.div>
       </div>
     </section>

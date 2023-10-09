@@ -3,14 +3,14 @@ import { projects } from "../../js/projects";
 
 export default function Projects() {
   return (
-    <div className="grid gap-20 md:gap-24">
+    <div className="flex flex-col ">
       {projects.map((project) => (
-        <div key={project.id} className="flex flex-col">
+        <div key={project.id} className="flex flex-col mb-24">
           <Link to={project.link} className="mb-5 overflow-hidden ">
             <img
               src={project.image}
               alt={project.name}
-              className="w-full h-auto transition-all duration-300 ease-in-out hover:scale-105"
+              className="transition-all duration-300 ease-in-out hover:scale-105"
             />
           </Link>
 
