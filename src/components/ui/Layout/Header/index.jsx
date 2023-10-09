@@ -38,7 +38,7 @@ export default function Header() {
 
         <div
           className={`bg-primary w-full h-screen absolute right-0 z-10 flex justify-end transition-all duration-500 ease-in-out md-750:w-72 xl-1400:-left-8 ${
-            showMenu ? "top-0 opacity-1 visible" : "-top-full opacity-0 hidden"
+            showMenu ? "top-0 opacity-1" : "-top-full opacity-0"
           }`}
         >
           <div className="mt-24 mr-5 mb-8 z-30 ">

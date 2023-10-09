@@ -12,7 +12,7 @@ export default {
         sans: ["Montserrat, sans-serif"],
       },
       fontSize: {
-        home: "13vw",
+        home: "14vw",
       },
       maxWidth: {
         900: "900px",

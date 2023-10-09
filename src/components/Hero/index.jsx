@@ -13,7 +13,7 @@ export default function Hero() {
       </m.h1>
 
       <div className="flex flex-col justify-around mb-16 md:flex-row md:items-center">
-        <m.div className="overflow-hidden md:w-1/2">
+        <m.div className="overflow-hidden mb-5 md:w-1/2">
           <m.h2
             animate={{ opacity: 1 }}
             initial={{ opacity: 0 }}
