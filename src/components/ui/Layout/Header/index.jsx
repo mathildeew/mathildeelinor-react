@@ -5,7 +5,6 @@ import { motion as m } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsis } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { HeaderContainer } from "./Header.styles";
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
@@ -21,7 +20,7 @@ export default function Header() {
   });
 
   return (
-    <HeaderContainer className="w-full max-w-900 h-full flex justify-end mx-auto">
+    <header className="w-full max-w-900 h-full flex justify-end mx-auto">
       <m.nav
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -104,6 +103,6 @@ export default function Header() {
           </div>
         </div>
       </m.nav>
-    </HeaderContainer>
+    </header>
   );
 }
