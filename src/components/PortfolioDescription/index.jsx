@@ -1,6 +1,6 @@
 export default function Description() {
   return (
-    <div className="intro part mb-14">
+    <div className="mb-14">
       <p className="mb-5">
         This is a showcase of my best work from the Front-end development course
         at Noroff.
