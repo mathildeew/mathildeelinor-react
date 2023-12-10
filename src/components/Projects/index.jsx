@@ -3,7 +3,8 @@ import { projects } from "../../js/projects";
 
 export default function Projects() {
   return (
-    <div className="flex flex-col ">
+    <section className="flex flex-col ">
+      <h2>Prosjekter</h2>
       {projects.map((project) => (
         <div key={project.id} className="flex flex-col mb-24">
           <Link to={project.link} className="mb-5 overflow-hidden ">
@@ -34,6 +35,6 @@ export default function Projects() {
           </div>
         </div>
       ))}
-    </div>
+    </section>
   );
 }

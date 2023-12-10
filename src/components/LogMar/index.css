@@ -1,0 +1,22 @@
+span {
+  margin: 0 -20px 0 -4px;
+  user-select: none !important;
+  transition: 0.3s;
+}
+
+span {
+  padding: 0 5px;
+  filter: blur(7px);
+}
+
+span:hover {
+  filter: blur(0px);
+}
+
+span:nth-child(even):hover {
+  transform: rotate(45deg);
+}
+
+span:nth-child(odd):hover {
+  transform: rotate(-45deg);
+}

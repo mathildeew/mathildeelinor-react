@@ -1,7 +1,7 @@
 import { motion as m } from "framer-motion";
 import SEOHelmet from "../../components/SEOHelmet";
 import Description from "../../components/PortfolioDescription";
-import Projects from "../../components/ProjectsGrid";
+// import Projects from "../../components/ProjectsGrid";
 
 export default function Portfolio() {
   return (
@@ -29,7 +29,7 @@ export default function Portfolio() {
           transition={{ delay: 0.5, duration: 0.5 }}
         >
           <Description />
-          <Projects />
+          {/* <Projects /> */}
         </m.div>
       </div>
     </>

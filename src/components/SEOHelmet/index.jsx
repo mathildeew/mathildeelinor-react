@@ -12,10 +12,3 @@ export default function SEOHelmet({ title }, { content }) {
     </HelmetProvider>
   );
 }
-
-{
-  /* <meta
-name="description"
-content="Mathilde Elinor is a frontend developer based in Oslo, Norway."
-/> */
-}
