@@ -22,7 +22,7 @@ export default function AnimatedRoutes() {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="portfolio" element={<Portfolio />} />
+          <Route path="/prosjekter" element={<Portfolio />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
