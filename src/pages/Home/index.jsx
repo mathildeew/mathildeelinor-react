@@ -1,17 +1,18 @@
 import SEOHelmet from "../../components/SEOHelmet";
-import About from "../../components/About";
-import Hero from "../../components/Hero";
 import LogMar from "../../components/LogMar";
-import SchoolProjects from "../../components/School";
-import Projects from "../../components/Projects";
+import About from "../../components/About";
+import Projects from "../../components/ProjectsHome";
+import SchoolProjects from "../../components/SchoolHome";
 
 export default function Home() {
   return (
     <>
       <SEOHelmet
-        title={"Home"}
-        content="Mathilde Elinor is a front-end developer based in Oslo, Norway"
+        title="Mathilde Elinor"
+        content="Front-end utvikler og webdesign."
       />
+
+      <LogMar />
       <About />
       <Projects />
       <SchoolProjects />

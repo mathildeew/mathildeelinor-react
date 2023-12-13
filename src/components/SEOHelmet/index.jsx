@@ -7,7 +7,7 @@ export default function SEOHelmet({ title }, { content }) {
         <link rel="icon" type="image/svg+xml" href="public/favicon.png" />
         <link rel="stylesheet" href="https://use.typekit.net/uln7czn.css" />
         <meta name="description" content={content}></meta>
-        <title>Mathilde Elinor | {title}</title>
+        <title>{title}</title>
       </Helmet>
     </HelmetProvider>
   );

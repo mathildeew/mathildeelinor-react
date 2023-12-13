@@ -7,7 +7,7 @@ export default function Projects() {
       <h2>Prosjekter</h2>
       {projects.map((project) => (
         <div key={project.id} className="flex flex-col mb-24">
-          <Link to={project.link} className="overflow-hidden ">
+          <Link to={project.internal} className="overflow-hidden ">
             <img
               src={project.image}
               alt={project.name}

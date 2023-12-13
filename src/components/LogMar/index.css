@@ -4,7 +4,7 @@ span {
   transition: 0.3s;
 }
 
-span {
+/* span {
   padding: 0 5px;
   filter: blur(7px);
 }
@@ -19,4 +19,4 @@ span:nth-child(even):hover {
 
 span:nth-child(odd):hover {
   transform: rotate(-45deg);
-}
+} */

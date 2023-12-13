@@ -1,6 +1,12 @@
 import "./index.css";
+import { colorize } from "../../js/hover";
+import { useEffect } from "react";
 
 export default function LogMar() {
+  useEffect(() => {
+    colorize();
+  }, []);
+
   return (
     <div className="">
       <div className="text-7xl flex justify-center mb-5">

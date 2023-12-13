@@ -1,6 +1,6 @@
 export const schoolProjects = [
   {
-    id: 5,
+    id: "holidaze",
     name: "Holidaze",
     title: "Project Exam 2",
     description:
@@ -12,7 +12,7 @@ export const schoolProjects = [
     link: "https://holidaze-projectexam2.netlify.app/",
   },
   {
-    id: 4,
+    id: "sjaapp",
     name: "Sjåpp",
     title: "JavaScript Frameworks CA",
     description:
@@ -24,7 +24,7 @@ export const schoolProjects = [
     link: "https://sjaapp.netlify.app/",
   },
   {
-    id: 3,
+    id: "gavel",
     name: "Gavel",
     title: "Semester Project 2",
     description:
@@ -36,7 +36,7 @@ export const schoolProjects = [
     link: "https://gavel-sp2.netlify.app/",
   },
   {
-    id: 2,
+    id: "cerchio-studio",
     name: "Cerchio Studio",
     title: "Project Exam 1",
     description:

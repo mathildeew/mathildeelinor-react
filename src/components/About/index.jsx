@@ -6,27 +6,29 @@ import { Link } from "react-router-dom";
 export default function About() {
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
   return (
-    <section>
-      <h1 className="text-2xl">Front-end developer</h1>
-      <p>
+    <section className="mb-20">
+      <h1>Front-end developer</h1>
+      <p className="mb-4">
         Jeg liker å lage brukervennlige, engasjerende og solide produkter og
         bringe ideer til liv.
       </p>
 
-      <div className="flex">
+      <div className="flex mb-6">
         <a href="https://github.com/mathildeew">Github</a>
-        <p>/</p>
+        <p className="mx-2">/</p>
         <a href="www.linkedin.com/in/mathilde-elinor-wiik-88075b249">
           LinkedIn
         </a>
-        <p>/</p>
+        <p className="mx-2">/</p>
         <Link to="/dist/CV_MathildeElinor_en.pdf" target="_blank">
           CV
         </Link>
+        <p className="mx-2">/</p>
+        <a href="mailto:hei@mathildeelinor.no">Mail</a>
       </div>
 
       <div className="collapsible">
-        <div className="header" {...getToggleProps()}>
+        <div className="header mb-4" {...getToggleProps()}>
           {isExpanded ? (
             <FontAwesomeIcon icon={faMinus} />
           ) : (

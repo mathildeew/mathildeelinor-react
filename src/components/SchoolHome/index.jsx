@@ -7,7 +7,10 @@ export default function SchoolProjects() {
       <h2>Skolearbeider</h2>
       {schoolProjects.map((project) => (
         <div key={project.id} className="flex flex-col mb-24">
-          <Link to={project.link} className="mb-5 overflow-hidden ">
+          <Link
+            to={`prosjekter/${project.id}`}
+            className="mb-5 overflow-hidden "
+          >
             <img
               src={project.image}
               alt={project.name}

@@ -17,8 +17,6 @@
   }
 
   body {
-    color: theme(colors.primary);
-    background-color: theme(colors.secondary);
     width: 100vw;
   }
 
@@ -32,12 +30,17 @@
 
   h1,
   h2,
+  h3,
   span {
     font-family: theme(fontFamily.optician);
   }
 
+  h1 {
+    font-size: 32px;
+  }
+
   h2 {
-    font-size: 18px;
+    font-size: 28px;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -45,7 +48,7 @@
   }
 
   h3 {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 6px;
   }
@@ -55,24 +58,19 @@
   }
 
   p {
-    font-family: theme(fontFamily.serif);
-    font-size: 16px;
     line-height: 2;
   }
 
+  p,
   a {
     font-family: theme(fontFamily.serif);
-    text-decoration: none;
-    padding: 2px;
+    font-size: 18px;
   }
 
-  h1,
-  h2,
-  h3,
-  p,
-  a,
-  span {
-    color: theme(colors.primary);
+  a {
+    font-weight: bold;
+    text-decoration: none;
+    padding: 2px;
   }
 
   ul {
