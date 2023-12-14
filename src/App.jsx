@@ -8,6 +8,8 @@ import LillestromOptikk from "./pages/Projects/lillestromoptikk";
 import SchoolWork from "./pages/Projects/schoolWork";
 
 export default function App() {
+  const location = useLocation();
+
   useEffect(() => {
     document.documentElement.scrollTo({
       top: 0,

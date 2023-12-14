@@ -12,12 +12,16 @@ export default function SchoolWork() {
       <SEOHelmet title={`${project.name} - ${project.title}`} description="" />
       <section>
         <h1>{project.name}</h1>
-        <h2>{project.title}</h2>
-        <img src={project.image} />
-        <p>{project.description}</p>
-        <p>{project.languages}</p>
-        <a href={project.github}>Github</a>
-        <a href={project.link}>Demo</a>
+        <img src={project.image} className="mb-5" />
+        <p className="mb-5">{project.description}</p>
+
+        <p className="mb-5">{project.languages}</p>
+
+        <div className="flex">
+          <a href={project.github}>Github</a>
+          <p className="mx-2">/</p>
+          <a href={project.link}>Demo</a>
+        </div>
       </section>
     </>
   );

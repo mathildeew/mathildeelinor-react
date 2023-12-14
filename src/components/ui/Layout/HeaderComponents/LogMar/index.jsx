@@ -1,5 +1,5 @@
 import "./index.css";
-import { colorize } from "../../js/hover";
+import { colorize } from "../../../../../js/hover";
 import { useEffect } from "react";
 
 export default function LogMar() {

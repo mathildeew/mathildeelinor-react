@@ -8,7 +8,12 @@ export default {
         optician: ["Optician Sans, sans-serif"],
         serif: ["Times"],
       },
+      colors: {
+        kleinBlue: "#0002FA",
+        lightYellow: "#fffef7",
+      },
       maxWidth: {
+        700: "700px",
         900: "900px",
       },
       screens: {
