@@ -9,7 +9,7 @@ export default function SchoolWork() {
 
   return (
     <>
-      <SEOHelmet title={`${project.name} - ${project.title}`} description="" />
+      <SEOHelmet title={`${project.name} - ${project.title}`} content="" />
       <section>
         <h1>{project.name}</h1>
         <img src={project.image} className="mb-5" />

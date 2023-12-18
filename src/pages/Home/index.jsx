@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <SEOHelmet
-        title="Mathilde Elinor"
+        title="Front-end utvikler"
         content="Front-end utvikler og webdesign."
       />
 

@@ -40,14 +40,14 @@ export default function About() {
             <div className="mb-8">
               <h2>Skills</h2>
               <p>
-                Web accessibility, SE Optimization, FE Optimization, responsive
-                web design, testing.
+                Universell utforming, SE optimalisering, FE optimalisering,
+                responsiv web design, testing.
               </p>
             </div>
 
             <div className="mb-8">
               <h3>Språk</h3>
-              <p>JavaScript, CSS, Sass, HTML, Git</p>
+              <p>JavaScript, CSS/Sass, HTML, Git</p>
             </div>
 
             <div className="mb-8">

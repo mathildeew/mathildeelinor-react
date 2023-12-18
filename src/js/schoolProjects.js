@@ -1,8 +1,9 @@
 export const schoolProjects = [
   {
     id: "holidaze",
+    made: "Oktober 2023",
     name: "Holidaze",
-    title: "Project Exam 2",
+    title: "Prosjekt eksamen 2",
     description:
       "Avsluttende eksamensprosjekt ved Noroff. Prosjekter er en omfattende applikasjon som viser alle ferdigheter oppnådd gjennom de to siste årene. Holidaze er en bookingside for med  The final exam project at Noroff. The project is an extensive application that showcase all skills gained throughout the last two years. Holidaze is an accommodation booking site that provides the customer-facing side where users can book holidays at a venue, and an admin-facing side where users can register and manage venues and bookings at those venues.",
     languages:
@@ -14,8 +15,9 @@ export const schoolProjects = [
   },
   {
     id: "sjaapp",
+    made: "Juni 2023",
     name: "Sjåpp",
-    title: "JavaScript Frameworks CA",
+    title: "JavaScript Rammeverk",
     description:
       "Laget det siste semesteret hos Noroff. Målet var å vise kunnskap om React ved å utivkle en eCom-butikk som simulerer en virkelig online shoppingopplevelse. Nettsiden har produktvisning, søkefunksjon, detaljerte produktsider, handlekurvfunksjon administrert med context/reducer og en betalingsprosess.",
     english:
@@ -30,7 +32,8 @@ export const schoolProjects = [
   {
     id: "gavel",
     name: "Gavel",
-    title: "Semester Project 2",
+    made: "Mars 2023",
+    title: "Semester Prosjekt 2",
     description:
       "Gaven er en online auksjonsside laget til første semesteroppgave i andre år hos Noroff. Nettsiden dekker front-end applikasjonen for en eksisterende API. Prosjektet integrerer Prettier for kodeformatering, ESLint for linting og Cypress for E2E-testing",
     english:
@@ -45,7 +48,8 @@ export const schoolProjects = [
   {
     id: "cerchio-studio",
     name: "Cerchio Studio",
-    title: "Project Exam 1",
+    made: "Oktober 2022",
+    title: "Prosjekt Eksamen 1",
     description:
       "Dette prosjektet er avsluttende eksamen ved det første året på Noroff. Oppgaven var å utvikle en blogg med selvvalgt tema, bygget med WordPress REST API. Prosjektet er en oppsummering av alle ferdigheter lært det første året med vekt på designprinsipper, webutvikling og innholdsstyringssystem. Bloggen har en søkefunksjon, kategorifiltrering, en bloggpostkarusell og alt innhold lagret med headless CMS.",
     english:
@@ -57,9 +61,10 @@ export const schoolProjects = [
     link: "https://cerchio-studio.netlify.app/",
   },
   {
-    id: 1,
+    id: "cms",
     name: "Community Sciene Museum",
-    title: "Semester Project 1",
+    made: "Mars 2022",
+    title: "Semester Prosjekt 1",
     description:
       "Nettsiden til Community Science Museum, et fiktivt museum med en kjernemålgruppe i alderen 7-15 år. Målet var å lage en informativ og engasjerende nettside, som skulle være responsiv og enkel å bruke på en rekke enheter. Prosjektet viser kunnskap innen design og WCAG-prinsipper, hensyn til innholdsstrategi og SEO.",
     english:
