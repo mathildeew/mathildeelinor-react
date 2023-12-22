@@ -12,6 +12,7 @@ export default function Home() {
       />
 
       <About />
+      <hr className="bg-badGradient h-2" />
       <Projects />
       <SchoolProjects />
     </>

@@ -9,6 +9,7 @@ export const schoolProjects = [
     languages:
       "Bygget med React+Vite, styled-components, JavaScript, HTML og Noroff Holidaze API.",
     image: "/dist/projects/holidaze.jpg",
+    preview: "/dist/projects/holidaze-preview.png",
     logo: "/dist/projects/logo/holidaze-logo.png",
     github: "https://github.com/mathildeew/project-exam2-holidaze",
     link: "https://holidaze-projectexam2.netlify.app/",
@@ -25,6 +26,7 @@ export const schoolProjects = [
     languages:
       "Bygget med React+Vite, styled-components, JavaScript, HTML og Noroff Online Shop API.",
     image: "/dist/projects/sjaapp.png",
+    preview: "/dist/projects/sjaapp-preview.png",
     logo: "/dist/projects/logo/sjaapp-logo.png",
     github: "https://github.com/mathildeew/js-frameworks-ca",
     link: "https://sjaapp.netlify.app/",
@@ -41,6 +43,7 @@ export const schoolProjects = [
     languages:
       "Bygget med JavaScript, HTML, Bootstrap og Noroff Auction House API.",
     image: "/dist/projects/gavel.png",
+    preview: "/dist/projects/gavel-preview.png",
     logo: "/dist/projects/logo/gavel-logo.png",
     github: "https://github.com/mathildeew/semester-project-2",
     link: "https://gavel-sp2.netlify.app/",
@@ -56,6 +59,7 @@ export const schoolProjects = [
       "The final project of the first year was a self-selected blog site, assigned to a fictional ceramic studio called Cerchio Studio. The project is a summary of all skills learned the first year with an emphasis on design principles, web development and content management system. The blog features a search function, category filtering, a blogpost carousel and all the content stored as a headless CMS.",
     languages: "Bygget med JavaScript, HTML, CSS og WordPress REST API.",
     image: "/dist/projects/cerchiostudio.jpg",
+    preview: "/dist/projects/cerchio-preview.png",
     logo: "/dist/projects/logo/cerchio-logo.png",
     github: "https://github.com/mathildeew/projext-exam-1-cerchio-studio",
     link: "https://cerchio-studio.netlify.app/",
@@ -71,6 +75,8 @@ export const schoolProjects = [
       "The website for Community Science Museum, a fictional museum with a core target audience aged 7-15. The brief was to make an informative and engaging website, that should be responsive and easy to use on a variety of devices. The project shows knowledge in design and WCAG principles, consideration for content strategy and SEO.",
     languages: "Bygget med with HTML and CSS.",
     image: "/dist/projects/csm.jpg",
+    preview: "/dist/projects/cms-preview.jpg",
+
     logo: "/dist/projects/logo/cms-logo.png",
     github:
       "https://github.com/mathildeew/semester-project-1-community-science-museum",

@@ -8,7 +8,7 @@ export default function LogMar() {
   }, []);
 
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex flex-col gap-5 py-5">
       <div className="text-7xl flex justify-center gap-16">
         <span>M</span>
         <span>A</span>

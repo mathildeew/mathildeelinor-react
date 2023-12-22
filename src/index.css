@@ -67,9 +67,10 @@
   }
 
   a {
-    font-weight: bold;
+    /* font-weight: bold; */
     text-decoration: none;
     padding: 2px;
+    margin-bottom: 0px;
   }
 
   ul {

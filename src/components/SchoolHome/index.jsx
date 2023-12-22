@@ -6,16 +6,17 @@ import { schoolProjects } from "../../js/schoolProjects.js";
 
 export default function SchoolProjects() {
   return (
-    <section className="flex flex-col ">
-      <h2 className="mb-5">Skolearbeider</h2>
+    <section className="flex flex-col gap-12 py-10">
+      <h2>Skolearbeider</h2>
       {schoolProjects.map((project) => (
-        <div key={project.id} className="mb-8 w-100">
-          <Link to={`/prosjekter/${project.id}`} className="font-normal">
-            <img src={project.logo} />
-            <div className="flex items-center">
-              <p className="mr-6">{project.title}</p>
-              <FontAwesomeIcon icon={faArrowRightLong} />
-            </div>
+        <div key={project.id} className="">
+          <Link to={`/prosjekter/${project.id}`} className=" inline-block">
+            <img
+              src={project.preview}
+              className="w-5/6 transition-all duration-300 ease-in-out hover:rotate-3"
+            />
+
+            <h3>{project.title}</h3>
           </Link>
         </div>
       ))}

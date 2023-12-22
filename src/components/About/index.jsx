@@ -1,34 +1,37 @@
+import { Link } from "react-router-dom";
+import { useCollapse } from "react-collapsed";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
-import { useCollapse } from "react-collapsed";
-import { Link } from "react-router-dom";
 
 export default function About() {
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
-  return (
-    <section className="mb-20">
-      <h1>Front-end utvikler</h1>
-      <p className="mb-4">
-        Jeg liker å lage brukervennlige, engasjerende og solide produkter og
-        bringe ideer til liv.
-      </p>
 
-      <div className="flex mb-6">
+  return (
+    <section className="flex flex-col gap-6 py-10">
+      <div>
+        <h1>Front-end utvikler</h1>
+        <p>
+          Jeg liker å lage brukervennlige, engasjerende og solide produkter og
+          bringe ideer til liv.
+        </p>
+      </div>
+
+      <div className="flex gap-2">
         <a href="https://github.com/mathildeew">Github</a>
-        <p className="mx-2">/</p>
+        <p>/</p>
         <a href="www.linkedin.com/in/mathilde-elinor-wiik-88075b249">
           LinkedIn
         </a>
-        <p className="mx-2">/</p>
+        <p>/</p>
         <Link to="/dist/CV_MathildeElinor_en.pdf" target="_blank">
           CV
         </Link>
-        <p className="mx-2">/</p>
+        <p>/</p>
         <a href="mailto:hei@mathildeelinor.no">Mail</a>
       </div>
 
       <div className="collapsible">
-        <div className="header mb-4" {...getToggleProps()}>
+        <div className="header" {...getToggleProps()}>
           {isExpanded ? (
             <FontAwesomeIcon icon={faMinus} />
           ) : (
@@ -39,8 +42,8 @@ export default function About() {
           )}
         </div>
         <div {...getCollapseProps()}>
-          <div className="mb-14">
-            <div className="mb-8">
+          <div className="flex flex-col gap-8">
+            <div>
               <h2>Skills</h2>
               <p>
                 Universell utforming, SE optimalisering, FE optimalisering,
@@ -48,17 +51,17 @@ export default function About() {
               </p>
             </div>
 
-            <div className="mb-8">
+            <div>
               <h3>Språk</h3>
               <p>JavaScript, CSS/Sass, HTML, Git</p>
             </div>
 
-            <div className="mb-8">
+            <div>
               <h3>Rammeverk &amp; biblioteker</h3>
               <p>React, Bootstrap, Tailwind CSS, Jest</p>
             </div>
 
-            <div className="mb-8">
+            <div>
               <h3>Verktøy &amp; plattformer</h3>
               <p>
                 GitHub, WordPress, Cypress, Netlify, Adobe XD, Figma, Photoshop,
