@@ -13,15 +13,14 @@ export default function SchoolWork() {
       <section>
         <h1>{project.name}</h1>
         <img src={project.image} className="mb-5" />
-        <p className="mb-5">{project.description}</p>
-
-        <p className="mb-5">{project.languages}</p>
-
         <div className="flex">
           <a href={project.github}>Github</a>
           <p className="mx-2">/</p>
           <a href={project.link}>Demo</a>
         </div>
+        <p className="mb-5">{project.description}</p>
+
+        <p className="mb-5">{project.languages}</p>
       </section>
     </>
   );

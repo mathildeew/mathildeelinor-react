@@ -7,7 +7,7 @@ export default function About() {
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
   return (
     <section className="mb-20">
-      <h1>Front-end developer</h1>
+      <h1>Front-end utvikler</h1>
       <p className="mb-4">
         Jeg liker å lage brukervennlige, engasjerende og solide produkter og
         bringe ideer til liv.
@@ -32,7 +32,10 @@ export default function About() {
           {isExpanded ? (
             <FontAwesomeIcon icon={faMinus} />
           ) : (
-            <FontAwesomeIcon icon={faPlus} />
+            <div className="flex items-center gap-2">
+              <FontAwesomeIcon icon={faPlus} />
+              <p>Mer mer mer mer</p>
+            </div>
           )}
         </div>
         <div {...getCollapseProps()}>
