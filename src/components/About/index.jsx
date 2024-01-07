@@ -32,7 +32,7 @@ export default function About() {
         </a>
         <p>/</p>
         <Link
-          to="/dist/CV_MathildeElinor.pdf"
+          to="/public/CV_MathildeElinor.pdf"
           target="_blank"
           className="underline transition-all 0.2 ease-in-out hover:text-kleinBlue"
         >
