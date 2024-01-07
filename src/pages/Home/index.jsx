@@ -5,10 +5,7 @@ import Hero from "../../components/Hero";
 export default function Home() {
   return (
     <>
-      <SEOHelmet
-        title={"Home"}
-        content="Mathilde Elinor is a front-end developer based in Oslo, Norway"
-      />
+      <SEOHelmet title={""} content="Design og utvikling🌀" />
 
       <div>
         <Hero />

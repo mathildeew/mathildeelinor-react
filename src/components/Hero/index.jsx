@@ -13,13 +13,13 @@ export default function Hero() {
       </m.h1>
 
       <div className="flex flex-col justify-around mb-16 md:flex-row md:items-center">
-        <m.div className="overflow-hidden mb-5 md:w-1/2">
+        <m.div className="overflow-hidden md:w-1/2">
           <m.h2
             animate={{ opacity: 1 }}
             initial={{ opacity: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            Front-end developer
+            Frontend utvikler
           </m.h2>
           <m.p
             animate={{ y: 0 }}
@@ -27,12 +27,12 @@ export default function Hero() {
             transition={{ delay: 0.5, duration: 0.5 }}
             className="md:text-lg"
           >
-            I like to craft solid, accessible and engaging products, bringing
-            ideas to life.
+            Jeg liker å gi liv til idéer ved å skape solide, tilgjengelige og
+            engasjerende produkter.
           </m.p>
         </m.div>
         <m.div
-          className="bg-primary w-72 h-96  flex flex-col justify-center items-center rounded-blob mx-auto my-0 animate-[morph_2.75s_linear_infinite]"
+          className="bg-primary w-72 h-96 flex flex-col justify-center items-center rounded-blob mx-auto animate-[morph_2.75s_linear_infinite]"
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}
           transition={{ delay: 0.8, duration: 0.8 }}
