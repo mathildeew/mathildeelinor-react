@@ -6,7 +6,7 @@ import { schoolProjects } from "../../js/schoolProjects.js";
 
 export default function SchoolProjects() {
   return (
-    <section className="flex flex-col gap-12 py-10">
+    <section className="flex flex-col gap-12">
       <h2>Skolearbeider</h2>
       {schoolProjects.map((project) => (
         <div key={project.id} className="">

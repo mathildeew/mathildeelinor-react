@@ -18,6 +18,7 @@ export default {
       },
       maxWidth: {
         700: "700px",
+        800: "800px",
         900: "900px",
       },
       screens: {

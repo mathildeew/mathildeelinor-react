@@ -38,7 +38,7 @@ export default function LogMar() {
       </div>
       <div className="text-3xl flex justify-center gap-8">
         <span>2</span>
-        <span>3</span>
+        <span>4</span>
       </div>
     </div>
   );

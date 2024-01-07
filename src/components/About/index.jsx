@@ -7,7 +7,7 @@ export default function About() {
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
 
   return (
-    <section className="flex flex-col gap-6 py-10">
+    <section className="flex flex-col gap-6">
       <div>
         <h1>Front-end utvikler</h1>
         <p>
@@ -16,21 +16,38 @@ export default function About() {
         </p>
       </div>
 
-      <div className="flex gap-2">
-        <a href="https://github.com/mathildeew">Github</a>
+      <div className="flex gap-3">
+        <a
+          href="https://github.com/mathildeew"
+          className="underline transition-all 0.2 ease-in-out hover:text-kleinBlue"
+        >
+          Github
+        </a>
         <p>/</p>
-        <a href="www.linkedin.com/in/mathilde-elinor-wiik-88075b249">
+        <a
+          href="www.linkedin.com/in/mathilde-elinor-wiik-88075b249"
+          className="underline transition-all 0.2 ease-in-out hover:text-kleinBlue"
+        >
           LinkedIn
         </a>
         <p>/</p>
-        <Link to="/dist/CV_MathildeElinor_en.pdf" target="_blank">
+        <Link
+          to="/dist/CV_MathildeElinor_en.pdf"
+          target="_blank"
+          className="underline transition-all 0.2 ease-in-out hover:text-kleinBlue"
+        >
           CV
         </Link>
         <p>/</p>
-        <a href="mailto:hei@mathildeelinor.no">Mail</a>
+        <a
+          href="mailto:hei@mathildeelinor.no"
+          className="underline transition-all 0.2 ease-in-out hover:text-kleinBlue"
+        >
+          Mail
+        </a>
       </div>
 
-      <div className="collapsible">
+      {/* <div className="collapsible">
         <div className="header" {...getToggleProps()}>
           {isExpanded ? (
             <FontAwesomeIcon icon={faMinus} />
@@ -41,36 +58,34 @@ export default function About() {
             </div>
           )}
         </div>
-        <div {...getCollapseProps()}>
-          <div className="flex flex-col gap-8">
-            <div>
-              <h2>Skills</h2>
-              <p>
-                Universell utforming, SE optimalisering, FE optimalisering,
-                responsiv web design, testing.
-              </p>
-            </div>
+        <div {...getCollapseProps()} className="flex flex-col gap-8">
+          <div>
+            <h2>Skills</h2>
+            <p>
+              Universell utforming, SE optimalisering, FE optimalisering,
+              responsiv web design, testing.
+            </p>
+          </div>
 
-            <div>
-              <h3>Språk</h3>
-              <p>JavaScript, CSS/Sass, HTML, Git</p>
-            </div>
+          <div>
+            <h3>Språk</h3>
+            <p>JavaScript, CSS/Sass, HTML, Git</p>
+          </div>
 
-            <div>
-              <h3>Rammeverk &amp; biblioteker</h3>
-              <p>React, Bootstrap, Tailwind CSS, Jest</p>
-            </div>
+          <div>
+            <h3>Rammeverk &amp; biblioteker</h3>
+            <p>React, Bootstrap, Tailwind CSS, Jest</p>
+          </div>
 
-            <div>
-              <h3>Verktøy &amp; plattformer</h3>
-              <p>
-                GitHub, WordPress, Cypress, Netlify, Adobe XD, Figma, Photoshop,
-                Illustrator
-              </p>
-            </div>
+          <div>
+            <h3>Verktøy &amp; plattformer</h3>
+            <p>
+              GitHub, WordPress, Cypress, Netlify, Adobe XD, Figma, Photoshop,
+              Illustrator
+            </p>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

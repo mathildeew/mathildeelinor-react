@@ -10,11 +10,12 @@ export default function Home() {
         title="Front-end utvikler"
         content="Front-end utvikler og webdesign."
       />
-
-      <About />
-      <hr className="bg-badGradient h-2" />
-      <Projects />
-      <SchoolProjects />
+      <div className="flex flex-col gap-12">
+        <About />
+        <hr className="bg-badGradient h-2" />
+        <Projects />
+        <SchoolProjects />
+      </div>
     </>
   );
 }

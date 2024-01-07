@@ -5,7 +5,9 @@ export const schoolProjects = [
     name: "Holidaze",
     title: "Prosjekt eksamen 2",
     description:
-      "Avsluttende eksamensprosjekt ved Noroff. Prosjekter er en omfattende applikasjon som viser alle ferdigheter oppnådd gjennom de to siste årene. Holidaze er en bookingside for med  The final exam project at Noroff. The project is an extensive application that showcase all skills gained throughout the last two years. Holidaze is an accommodation booking site that provides the customer-facing side where users can book holidays at a venue, and an admin-facing side where users can register and manage venues and bookings at those venues.",
+      "Avsluttende eksamensprosjekt ved Noroff som viser alle ferdigheter oppnådd gjennom de to siste årene. Prosjektet er en omfattende booking-applikasjon hvor brukere kan søke i oppførte utleieobjekter, se detaljer og tilgjengjelige datoer ved disse samt booke overnattinger. Brukere kan også registere seg som admid og få mulighet til å opprette, endre og slette utleieobjekter samt følge med på reservasjoner.",
+    english:
+      "The final exam project at Noroff. The project is an extensive application that showcase all skills gained throughout the last two years. Holidaze is an accommodation booking site that provides the customer-facing side where users can book holidays at a venue, and an admin-facing side where users can register and manage venues and bookings at those venues.",
     languages:
       "Bygget med React+Vite, styled-components, JavaScript, HTML og Noroff Holidaze API.",
     image: "/dist/projects/holidaze.jpg",
@@ -70,10 +72,10 @@ export const schoolProjects = [
     made: "Mars 2022",
     title: "Semester Prosjekt 1",
     description:
-      "Nettsiden til Community Science Museum, et fiktivt museum med en kjernemålgruppe i alderen 7-15 år. Målet var å lage en informativ og engasjerende nettside, som skulle være responsiv og enkel å bruke på en rekke enheter. Prosjektet viser kunnskap innen design og WCAG-prinsipper, hensyn til innholdsstrategi og SEO.",
+      "Nettsiden til Community Science Museum, et fiktivt museum med en kjernemålgruppe i alderen 7-15 år. Målet var å lage en informativ og engasjerende nettside som skulle være responsiv og enkel å bruke på en rekke enheter. Prosjektet viser kunnskap innen design og WCAG-prinsipper, hensyn til innholdsstrategi og SEO.",
     english:
       "The website for Community Science Museum, a fictional museum with a core target audience aged 7-15. The brief was to make an informative and engaging website, that should be responsive and easy to use on a variety of devices. The project shows knowledge in design and WCAG principles, consideration for content strategy and SEO.",
-    languages: "Bygget med with HTML and CSS.",
+    languages: "Bygget med HTML og CSS.",
     image: "/dist/projects/csm.jpg",
     preview: "/dist/projects/cms-preview.jpg",
 

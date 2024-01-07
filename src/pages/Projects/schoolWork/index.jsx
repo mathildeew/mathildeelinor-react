@@ -10,17 +10,21 @@ export default function SchoolWork() {
   return (
     <>
       <SEOHelmet title={`${project.name} - ${project.title}`} content="" />
-      <section>
-        <h1>{project.name}</h1>
-        <img src={project.image} className="mb-5" />
-        <div className="flex">
-          <a href={project.github}>Github</a>
-          <p className="mx-2">/</p>
-          <a href={project.link}>Demo</a>
-        </div>
-        <p className="mb-5">{project.description}</p>
 
-        <p className="mb-5">{project.languages}</p>
+      <section className="flex flex-col gap-4">
+        <h1>{project.name}</h1>
+        <img src={project.image} className="" />
+        <div className="flex items-center gap-3 font-semibold">
+          <a href={project.github} className="underline">
+            Github
+          </a>
+          <p>/</p>
+          <a href={project.link} className="underline">
+            Demo
+          </a>
+        </div>
+        <p>{project.description}</p>
+        <p>{project.languages}</p>
       </section>
     </>
   );
