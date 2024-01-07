@@ -18,14 +18,19 @@ export default function LillestromOptikk() {
         </div>
         <div>
           <h2>Nettsted</h2>
-          <a href="https://www.lillestromoptikk.no">www.lillestromoptikk.no</a>
+          <a
+            href="https://www.lillestromoptikk.no"
+            className="underline transition-all 0.2 ease-in-out hover:text-kleinBlue"
+          >
+            www.lillestromoptikk.no
+          </a>
         </div>
         <img src="/dist/projects/lillestromOptikk/lillestromoptikk-banner.png" />
         <p>
           Høsten 2023 åpnet Lillestrøm Optikk dørene &mdash; den nye lokale
           optikeren på Romerike. Målet var en designprofil som skiller seg ut i
           mengden, men likevel tydeliggjør hvilke tjenester bedriften tilbyr ved
-          et profesjonelt uttrykk med innslag av morsomme elementer.
+          et profesjonelt uttrykk med innslag av grafiske elementer.
         </p>
         <p className="text-2xl pt-12">
           Prosjektet er fortsatt under arbeid &mdash; mer informasjon kommer.

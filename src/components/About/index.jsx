@@ -11,8 +11,8 @@ export default function About() {
       <div>
         <h1>Front-end utvikler</h1>
         <p>
-          Jeg liker å lage brukervennlige, engasjerende og solide produkter og
-          bringe ideer til liv.
+          Jeg liker å bringe idéer til liv ved å skape brukervennlige,
+          engasjerende og solide produkter.
         </p>
       </div>
 
@@ -32,7 +32,7 @@ export default function About() {
         </a>
         <p>/</p>
         <Link
-          to="/dist/CV_MathildeElinor_en.pdf"
+          to="/dist/CV_MathildeElinor.pdf"
           target="_blank"
           className="underline transition-all 0.2 ease-in-out hover:text-kleinBlue"
         >
@@ -46,46 +46,6 @@ export default function About() {
           Mail
         </a>
       </div>
-
-      {/* <div className="collapsible">
-        <div className="header" {...getToggleProps()}>
-          {isExpanded ? (
-            <FontAwesomeIcon icon={faMinus} />
-          ) : (
-            <div className="flex items-center gap-2">
-              <FontAwesomeIcon icon={faPlus} />
-              <p>Mer mer mer mer</p>
-            </div>
-          )}
-        </div>
-        <div {...getCollapseProps()} className="flex flex-col gap-8">
-          <div>
-            <h2>Skills</h2>
-            <p>
-              Universell utforming, SE optimalisering, FE optimalisering,
-              responsiv web design, testing.
-            </p>
-          </div>
-
-          <div>
-            <h3>Språk</h3>
-            <p>JavaScript, CSS/Sass, HTML, Git</p>
-          </div>
-
-          <div>
-            <h3>Rammeverk &amp; biblioteker</h3>
-            <p>React, Bootstrap, Tailwind CSS, Jest</p>
-          </div>
-
-          <div>
-            <h3>Verktøy &amp; plattformer</h3>
-            <p>
-              GitHub, WordPress, Cypress, Netlify, Adobe XD, Figma, Photoshop,
-              Illustrator
-            </p>
-          </div>
-        </div>
-      </div> */}
     </section>
   );
 }

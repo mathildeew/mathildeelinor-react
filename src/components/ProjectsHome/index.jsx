@@ -11,7 +11,7 @@ export default function Projects() {
             <img
               src={project.image}
               alt={project.name}
-              className="w-5/6 transition-all duration-300 ease-in-out hover:scale-105"
+              className="w-5/6 transition-all duration-300 ease-in-out hover:rotate-3"
             />
             <h3>{project.role}</h3>
           </Link>

@@ -10,9 +10,9 @@ export default function Home() {
         title="Front-end utvikler"
         content="Front-end utvikler og webdesign."
       />
-      <div className="flex flex-col gap-12">
+      <div className="flex flex-col gap-16">
         <About />
-        <hr className="bg-badGradient h-2" />
+        <hr className="bg-kleinBlue h-2" />
         <Projects />
         <SchoolProjects />
       </div>
