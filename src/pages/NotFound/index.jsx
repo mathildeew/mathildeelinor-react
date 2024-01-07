@@ -5,12 +5,18 @@ import SEOHelmet from "../../components/SEOHelmet";
 export default function NotFound() {
   return (
     <>
-      <SEOHelmet title={"Page not found"} />
+      <SEOHelmet title={"404"} />
 
-      <div className="text-center">
-        <h1 className="text-5xl mb-14">Page not found</h1>
+      <section className="text-center flex flex-col gap-16">
+        <h1 className="text-5xl">Denne siden finnes ikke</h1>
         <FontAwesomeIcon icon={faMugHot} className="text-5xl" />
-      </div>
+        <div className="flex justify-center gap-2">
+          <p>Burde den finnes?</p>
+          <a href="mailto:hei@mathildeelinor.no" className="underline">
+            Gi meg beskjed!
+          </a>
+        </div>
+      </section>
     </>
   );
 }

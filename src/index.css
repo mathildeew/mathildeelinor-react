@@ -19,14 +19,10 @@
 
   main {
     width: 100%;
-    max-width: 700px;
+    /* max-width: 700px; */
     min-height: 100vh;
-    margin: 50px auto;
-    padding: 0 15px;
-  }
-
-  h1 {
-    margin-bottom: 50px;
+    /* margin: 50px auto; */
+    /* padding: 0 15px; */
   }
 
   h2 {
@@ -45,15 +41,15 @@
     margin-bottom: 6px;
   }
 
-  p {
+  p,
+  a {
     font-family: theme(fontFamily.sans);
-    font-size: 14px;
+    font-size: 16px;
     line-height: 2;
   }
 
   a {
     text-decoration: none;
-    padding: 2px;
   }
 
   h1,
@@ -66,7 +62,6 @@
   }
 
   h1,
-  a,
   span {
     font-family: theme(fontFamily.serif);
   }

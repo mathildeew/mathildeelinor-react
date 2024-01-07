@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import { projects } from "../../js/projects";
+import { schoolProjects } from "../../js/schoolProjects";
 
 export default function Projects() {
   return (
     <div className="flex flex-col ">
-      {projects.map((project) => (
+      {schoolProjects.map((project) => (
         <div key={project.id} className="flex flex-col mb-24">
           <Link to={project.link} className="mb-5 overflow-hidden ">
             <img

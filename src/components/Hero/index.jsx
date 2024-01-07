@@ -2,17 +2,19 @@ import { motion as m } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="flex flex-col overflow-hidden">
+    <section className="flex flex-col gap-16 overflow-hidden ">
       <m.h1
         animate={{ y: 0 }}
         initial={{ y: "-100%" }}
         transition={{ delay: 0.5, duration: 0.5 }}
         className="text-home font-medium md:text-8xl"
       >
-        Mathilde Elinor
+        Mathilde
+        <br />
+        Elinor
       </m.h1>
 
-      <div className="flex flex-col justify-around mb-16 md:flex-row md:items-center">
+      <div className="flex flex-col gap-8 justify-around md:flex-row md:items-center">
         <m.div className="overflow-hidden md:w-1/2">
           <m.h2
             animate={{ opacity: 1 }}
@@ -39,7 +41,7 @@ export default function Hero() {
         >
           <img
             alt="Mathilde Elinor"
-            src="/dist/self1.jpg"
+            src="/public/self1.jpg"
             className="h-80 rounded-blob"
           />
         </m.div>

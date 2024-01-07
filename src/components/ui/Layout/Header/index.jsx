@@ -28,7 +28,7 @@ export default function Header() {
         className="md-900:relative"
       >
         <FontAwesomeIcon
-          aria-label="Toggles menu"
+          aria-label="Åpne/lukke meny"
           size="2x"
           className={`p-1.5 relative top-5 right-5 z-20 transition-all duration-500 ease-in-out ${
             showMenu && "text-secondary rotate-90"
@@ -42,48 +42,40 @@ export default function Header() {
             showMenu ? "top-0 opacity-1" : "-top-full opacity-0"
           }`}
         >
-          <div className="mt-24 mr-5 mb-8 z-30 ">
-            <ul className="text-end mb-16">
-              <li className="mb-5 ">
+          <div className="pt-32 pr-8 z-30 flex flex-col gap-16 ">
+            <ul className="text-end flex flex-col gap-5">
+              <li>
                 <Link
                   to="/"
                   onClick={() => setShowMenu(false)}
                   className="text-secondary text-3xl hover:relative hover:left-1 hover:italic"
                 >
-                  Home
+                  Hjem
                 </Link>
               </li>
-              <li className="mb-5">
+              <li>
                 <Link
-                  to="/portfolio"
-                  onClick={() => setShowMenu(false)}
-                  className="text-secondary text-3xl hover:relative hover:left-1 hover:italic"
-                >
-                  Portfolio
-                </Link>
-              </li>
-              <li className="mb-5">
-                <Link
-                  to="/dist/CV_MathildeElinor_en.pdf"
+                  to="/public/CV_MathildeElinor.pdf"
                   target="_blank"
                   onClick={() => setShowMenu(false)}
                   className="text-secondary text-3xl hover:relative hover:left-1 hover:italic"
                 >
-                  My CV
+                  CV
                 </Link>
               </li>
             </ul>
 
-            <div className="flex flex-col justify-end text-end">
-              <span className="text-secondary font-sans text-xl uppercase mb-2.5">
-                Say hello
+            <div className="text-end flex flex-col justify-end gap-4 ">
+              <span className="text-secondary font-sans text-xl uppercase">
+                Si hei
               </span>
               <Link
                 to="mailto: hei@mathildeelinor.no"
-                className="text-secondary font-sans mb-2.5 hover:italic"
+                className="text-secondary font-sans  hover:italic"
               >
                 hei@mathildeelinor.no
               </Link>
+
               <div>
                 <Link to="https://github.com/mathildeew">
                   <FontAwesomeIcon
