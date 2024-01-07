@@ -22,7 +22,7 @@ export default function LillestromOptikk() {
         ></m.div>
 
         <img
-          src="/projects/lillestromOptikk/lillestromWeb.jpg"
+          src="/dist/projects/lillestromOptikk/lillestromWeb.jpg"
           alt="Web mockup"
         />
         <div>
@@ -37,7 +37,7 @@ export default function LillestromOptikk() {
           <a href="https://www.lillestromoptikk.no">www.lillestromoptikk.no</a>
         </div>
         <img
-          src="/projects/lillestromOptikk/lillestromoptikk-banner.png"
+          src="/dist/projects/lillestromOptikk/lillestromoptikk-banner.png"
           alt="Logo"
         />
         <p>
