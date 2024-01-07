@@ -4,7 +4,7 @@ export default function SEOHelmet({ title, content }) {
   return (
     <HelmetProvider>
       <Helmet>
-        <link rel="icon" type="image/svg+xml" href="/dist/favicon.png" />
+        <link rel="icon" type="image/svg+xml" href="/assets/favicon.png" />
         <link rel="stylesheet" href="https://use.typekit.net/uln7czn.css" />
         <meta name="description" content={content}></meta>
         <title>Mathilde Elinor | {title}</title>
