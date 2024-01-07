@@ -25,7 +25,7 @@ export default function About() {
         </a>
         <p>/</p>
         <a
-          href="www.linkedin.com/in/mathilde-elinor-wiik-88075b249"
+          href="https://www.linkedin.com/in/mathilde-elinor-wiik-88075b249"
           className="underline transition-all 0.2 ease-in-out hover:text-kleinBlue"
         >
           LinkedIn

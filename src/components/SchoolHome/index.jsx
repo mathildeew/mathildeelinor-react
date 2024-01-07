@@ -13,7 +13,7 @@ export default function SchoolProjects() {
           <Link to={`/prosjekter/${project.id}`} className=" inline-block">
             <img
               src={project.preview}
-              className="w-5/6 transition-all duration-300 ease-in-out hover:rotate-3"
+              className="w-full transition-all duration-300 ease-in-out hover:rotate-3"
             />
 
             <h3>{project.title}</h3>

@@ -11,7 +11,7 @@ export default function SchoolWork() {
     <>
       <SEOHelmet title={`${project.name} - ${project.title}`} content="" />
 
-      <section className="flex flex-col gap-4">
+      <section className="flex flex-col gap-8">
         <h1>{project.name}</h1>
         <img src={project.image} className="" />
         <div className="flex items-center gap-3 font-semibold">
