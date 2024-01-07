@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+  @font-face {
+    font-family: "OpticianSans";
+    src: url("./fonts/Optician-Sans.otf");
+  }
+
   * {
     margin: 0;
   }
@@ -12,63 +17,57 @@
   }
 
   body {
-    color: theme(colors.primary);
-    background-color: theme(colors.secondary);
     width: 100vw;
   }
 
   main {
     width: 100%;
-    max-width: 700px;
+    max-width: 800px;
     min-height: 100vh;
     margin: 50px auto;
     padding: 0 15px;
   }
 
+  h1,
+  h2,
+  h3,
+  span {
+    font-family: theme(fontFamily.optician);
+  }
+
   h1 {
-    margin-bottom: 50px;
+    font-size: 32px;
   }
 
   h2 {
-    font-family: theme(fontFamily.sans);
-    font-size: 18px;
+    font-size: 28px;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
-    margin-bottom: 8px;
   }
 
   h3 {
-    font-family: theme(fontFamily.sans);
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 6px;
   }
 
+  span {
+    font-weight: 600;
+  }
+
   p {
-    font-family: theme(fontFamily.sans);
-    font-size: 14px;
     line-height: 2;
   }
 
-  a {
-    text-decoration: none;
-    padding: 2px;
-  }
-
-  h1,
-  h2,
-  h3,
   p,
-  a,
-  span {
-    color: theme(colors.primary);
+  a {
+    font-family: theme(fontFamily.serif);
+    font-size: 20px;
   }
 
-  h1,
-  a,
-  span {
-    font-family: theme(fontFamily.serif);
+  a {
+    margin-bottom: 0px;
   }
 
   ul {

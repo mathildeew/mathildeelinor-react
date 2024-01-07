@@ -1,31 +1,25 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
-      colors: {
-        primary: "#39469B",
-        secondary: "#F4E6D7",
-      },
       fontFamily: {
-        serif: ["Fromage, serif"],
-        sans: ["Montserrat, sans-serif"],
+        optician: ["Optician Sans, sans-serif"],
+        serif: ["Times"],
       },
-      fontSize: {
-        home: "14vw",
+      colors: {
+        kleinBlue: "#0002FA",
+        lightYellow: "#fffef7",
+      },
+      backgroundImage: {
+        badGradient:
+          "linear-gradient(90deg, rgba(242,187,176,1) 0%, rgba(86,0,194,1) 33%, rgba(0,2,250,1) 66%, rgba(89,169,131,1) 100%);",
       },
       maxWidth: {
+        700: "700px",
+        800: "800px",
         900: "900px",
-      },
-      borderRadius: {
-        blob: "40% 56% 72% 28% / 42% 42% 56% 48%",
-      },
-      keyframes: {
-        morph: {
-          "100%": { borderRadius: "42% 56% 72% 28% / 42% 42% 56% 48%" },
-          "33%": { borderRadius: "72% 28% 48% 48% / 28% 28% 72% 72%" },
-          "66%": { borderRadius: "100% 56% 56% 100% / 100% 100% 56% 56%" },
-        },
       },
       screens: {
         "md-750": "750px",
