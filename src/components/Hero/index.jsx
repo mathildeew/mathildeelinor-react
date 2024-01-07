@@ -41,7 +41,7 @@ export default function Hero() {
         >
           <img
             alt="Mathilde Elinor"
-            src="/public/self1.jpg"
+            src="/self1.jpg"
             className="h-80 rounded-blob"
           />
         </m.div>

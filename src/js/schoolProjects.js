@@ -9,8 +9,8 @@ export const schoolProjects = [
       "The final exam project at Noroff. The project is an extensive application that showcase all skills gained throughout the last two years. Holidaze is an accommodation booking site that provides the customer-facing side where users can book holidays at a venue, and an admin-facing side where users can register and manage venues and bookings at those venues.",
     languages:
       "Bygget med React+Vite, styled-components, JavaScript, HTML og Noroff Holidaze API.",
-    preview: "/public/projects/holidaze/holidaze-preview.png",
-    image: "/public/projects/holidaze/holidaze-landingpage.jpg",
+    preview: "/projects/holidaze/holidaze-preview.png",
+    image: "/projects/holidaze/holidaze-landingpage.jpg",
     github: "https://github.com/mathildeew/project-exam2-holidaze",
     link: "https://holidaze-projectexam2.netlify.app/",
   },
@@ -24,8 +24,8 @@ export const schoolProjects = [
       "Made in the final semester. The goal was to apply knowledge of React to build an eCom store, simulating a real-world online shopping experience. It features product display, search function, detailed product pages, cart management with context and reducer and a checkout process.",
     languages:
       "Bygget med React+Vite, styled-components, JavaScript, HTML og Noroff Online Shop API.",
-    preview: "/public/projects/sjaapp/sjaapp-preview.png",
-    image: "/public/projects/sjaapp/sjaapp-landingpage.png",
+    preview: "/projects/sjaapp/sjaapp-preview.png",
+    image: "/projects/sjaapp/sjaapp-landingpage.png",
     github: "https://github.com/mathildeew/js-frameworks-ca",
     link: "https://sjaapp.netlify.app/",
   },
@@ -38,8 +38,8 @@ export const schoolProjects = [
     english:
       "Gavel is an online auction site. The API functionality is managed by an existing application, and the project covers the front-end application for the API. It features user authentication, listing auctions and bidding. The project integrates Prettier for code formatting, ESLint for linting and Cypress for E2E testing.",
     languages: "Bygget med, HTML, Bootstrap og Noroff Auction House API.",
-    preview: "/public/projects/gavel/gavel-preview.png",
-    image: "/public/projects/gavel/gavel-landingpage.png",
+    preview: "/projects/gavel/gavel-preview.png",
+    image: "/projects/gavel/gavel-landingpage.png",
     github: "https://github.com/mathildeew/semester-project-2",
     link: "https://gavel-sp2.netlify.app/",
   },
@@ -52,8 +52,8 @@ export const schoolProjects = [
     english:
       "The final project of the first year was a self-selected blog site, assigned to a fictional ceramic studio called Cerchio. The project is a summary of all skills learned the first year with an emphasis on design principles, web development and content management system. The blog features a search function, category filtering, a blogpost carousel and all the content stored as a headless CMS.",
     languages: "Bygget med JavaScript, HTML, CSS og WordPress REST Api.",
-    preview: "/public/projects/cerchio/cerchio-preview.png",
-    image: "/public/projects/cerchio/cerchiostudio-landingpage.jpg",
+    preview: "/projects/cerchio/cerchio-preview.png",
+    image: "/projects/cerchio/cerchiostudio-landingpage.jpg",
     github: "https://github.com/mathildeew/projext-exam-1-cerchio-studio",
     link: "https://cerchio-studio.netlify.app/",
   },
@@ -66,8 +66,8 @@ export const schoolProjects = [
     english:
       "The website for Community Science Museum, a fictional museum with a core target audience aged 7-15. The brief was to make an informative and engaging website, that should be responsive and easy to use on a variety of devices. The project shows knowledge in design and WCAG principles, consideration for content strategy and SEO.",
     languages: "Bygget med HTML og CSS.",
-    preview: "/public/projects/csm/cms-preview.jpg",
-    image: "/public/projects/csm/csm-landingpage.jpg",
+    preview: "/projects/csm/cms-preview.jpg",
+    image: "/projects/csm/csm-landingpage.jpg",
     github:
       "https://github.com/mathildeew/semester-project-1-community-science-museum",
     link: "https://csm-oslo.netlify.app/",

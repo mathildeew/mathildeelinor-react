@@ -55,7 +55,7 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  to="/public/CV_MathildeElinor.pdf"
+                  to="/CV_MathildeElinor.pdf"
                   target="_blank"
                   onClick={() => setShowMenu(false)}
                   className="text-secondary text-3xl hover:relative hover:left-1 hover:italic"
